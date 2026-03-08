@@ -1039,6 +1039,101 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* データ構造（発展） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">データ構造（発展）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/fibonacci-heap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Fibonacci Heap</h2>
+            <p className="text-sm text-muted-foreground">
+              償却 O(1) の insert と decrease-key を持つヒープ
+            </p>
+          </Link>
+          <Link
+            href="/leftist-heap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Leftist Heap</h2>
+            <p className="text-sm text-muted-foreground">
+              s値で左偏性を保つマージ可能ヒープ
+            </p>
+          </Link>
+          <Link
+            href="/pairing-heap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Pairing Heap</h2>
+            <p className="text-sm text-muted-foreground">
+              シンプルで高速なマージ可能ヒープ
+            </p>
+          </Link>
+          <Link
+            href="/skew-heap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Skew Heap</h2>
+            <p className="text-sm text-muted-foreground">
+              無条件左右交換のマージ可能ヒープ
+            </p>
+          </Link>
+          <Link
+            href="/interval-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Interval Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              区間の重なりを効率的に検索する木構造
+            </p>
+          </Link>
+          <Link
+            href="/kd-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">k-d Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              多次元空間の点を管理する木構造
+            </p>
+          </Link>
+          <Link
+            href="/bloom-filter"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Bloom Filter</h2>
+            <p className="text-sm text-muted-foreground">
+              確率的メンバーシップテスト
+            </p>
+          </Link>
+          <Link
+            href="/count-min-sketch"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Count-Min Sketch</h2>
+            <p className="text-sm text-muted-foreground">
+              頻度を近似的に推定するスケッチデータ構造
+            </p>
+          </Link>
+          <Link
+            href="/persistent-array"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Persistent Array</h2>
+            <p className="text-sm text-muted-foreground">
+              過去のバージョンを保持する永続配列
+            </p>
+          </Link>
+          <Link
+            href="/rope"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Rope</h2>
+            <p className="text-sm text-muted-foreground">
+              文字列の効率的な編集操作を実現する平衡二分木
+            </p>
+          </Link>
+        </div>
+
         {/* 数学（線形代数） */}
         <h2 className="text-xl font-bold mt-8 mb-3">数学（線形代数）</h2>
         <div className="space-y-2">
