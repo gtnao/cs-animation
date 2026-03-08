@@ -600,6 +600,110 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* グラフ（その他） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">グラフ（その他）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/bipartite-check"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二部グラフ判定</h2>
+            <p className="text-sm text-muted-foreground">
+              BFSで2色塗り分けにより二部グラフを判定する
+            </p>
+          </Link>
+          <Link
+            href="/cycle-detection"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">サイクル検出</h2>
+            <p className="text-sm text-muted-foreground">
+              DFSでグラフ中の閉路を検出する
+            </p>
+          </Link>
+          <Link
+            href="/graph-coloring"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">グラフ彩色</h2>
+            <p className="text-sm text-muted-foreground">
+              隣接頂点が異なる色になるよう頂点を彩色する
+            </p>
+          </Link>
+          <Link
+            href="/two-sat"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">2-SAT</h2>
+            <p className="text-sm text-muted-foreground">
+              含意グラフとSCCで2-SAT問題を解く
+            </p>
+          </Link>
+          <Link
+            href="/tree-diameter"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">木の直径</h2>
+            <p className="text-sm text-muted-foreground">
+              2回のBFSで木の最遠頂点対間距離を求める
+            </p>
+          </Link>
+          <Link
+            href="/tree-centroid"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">木の重心</h2>
+            <p className="text-sm text-muted-foreground">
+              部分木サイズの最大値を最小化する頂点を求める
+            </p>
+          </Link>
+          <Link
+            href="/centroid-decomposition"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">重心分解</h2>
+            <p className="text-sm text-muted-foreground">
+              木を重心で再帰的に分割して分解木を構築する
+            </p>
+          </Link>
+          <Link
+            href="/auxiliary-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Auxiliary Tree (Virtual Tree)</h2>
+            <p className="text-sm text-muted-foreground">
+              指定頂点集合のLCAを含む圧縮木を構築する
+            </p>
+          </Link>
+          <Link
+            href="/block-cut-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Block Cut Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              二重連結成分と関節点の木構造を構築する
+            </p>
+          </Link>
+          <Link
+            href="/tree-isomorphism"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">木の同型判定</h2>
+            <p className="text-sm text-muted-foreground">
+              正規形で2つの木が同型かを判定する
+            </p>
+          </Link>
+          <Link
+            href="/prufer-sequence"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Prüfer Sequence</h2>
+            <p className="text-sm text-muted-foreground">
+              ラベル付き木とPrüfer列の全単射
+            </p>
+          </Link>
+        </div>
+
         {/* データ構造（基本） */}
         <h2 className="text-xl font-bold mt-8 mb-3">データ構造（基本）</h2>
         <div className="space-y-2">
