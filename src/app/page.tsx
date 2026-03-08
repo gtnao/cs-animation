@@ -1038,6 +1038,65 @@ export default function Home() {
             </p>
           </Link>
         </div>
+
+        {/* 数学（線形代数） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">数学（線形代数）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/matrix-multiplication"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">行列積</h2>
+            <p className="text-sm text-muted-foreground">
+              2つの行列の積を計算する
+            </p>
+          </Link>
+          <Link
+            href="/matrix-exponentiation"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">行列累乗</h2>
+            <p className="text-sm text-muted-foreground">
+              繰り返し二乗法で行列のべき乗を高速に計算する
+            </p>
+          </Link>
+          <Link
+            href="/gaussian-elimination"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ガウスの消去法</h2>
+            <p className="text-sm text-muted-foreground">
+              行基本変形で連立一次方程式を解く
+            </p>
+          </Link>
+          <Link
+            href="/gaussian-elimination-mod2"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ガウスの消去法 (mod 2)</h2>
+            <p className="text-sm text-muted-foreground">
+              GF(2)上のビット行列でXOR消去を行う
+            </p>
+          </Link>
+          <Link
+            href="/determinant"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">行列式</h2>
+            <p className="text-sm text-muted-foreground">
+              ガウスの消去法で行列式を計算する
+            </p>
+          </Link>
+          <Link
+            href="/linear-basis"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">線形基底 (XOR Basis)</h2>
+            <p className="text-sm text-muted-foreground">
+              XOR空間の基底を構築する
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
