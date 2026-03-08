@@ -125,6 +125,196 @@ export default function Home() {
             </p>
           </Link>
         </div>
+
+        {/* グラフ（探索・最短路） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">グラフ（探索・最短路）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/bfs"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">BFS</h2>
+            <p className="text-sm text-muted-foreground">
+              幅優先探索でグラフを層ごとに探索する
+            </p>
+          </Link>
+          <Link
+            href="/dfs"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">DFS</h2>
+            <p className="text-sm text-muted-foreground">
+              深さ優先探索でグラフを深く掘り下げて探索する
+            </p>
+          </Link>
+          <Link
+            href="/dijkstra"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Dijkstra法</h2>
+            <p className="text-sm text-muted-foreground">
+              非負重みグラフの単一始点最短路を求める
+            </p>
+          </Link>
+          <Link
+            href="/bellman-ford"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Bellman-Ford法</h2>
+            <p className="text-sm text-muted-foreground">
+              負辺を含むグラフの単一始点最短路を求める
+            </p>
+          </Link>
+          <Link
+            href="/warshall-floyd"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Warshall-Floyd法</h2>
+            <p className="text-sm text-muted-foreground">
+              全頂点対間の最短路を求める
+            </p>
+          </Link>
+          <Link
+            href="/spfa"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">SPFA</h2>
+            <p className="text-sm text-muted-foreground">
+              Bellman-Ford法のキュー最適化版
+            </p>
+          </Link>
+          <Link
+            href="/johnson"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Johnson&apos;s Algorithm</h2>
+            <p className="text-sm text-muted-foreground">
+              ポテンシャル変換で全頂点対間最短路を効率的に求める
+            </p>
+          </Link>
+          <Link
+            href="/a-star"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">A*探索</h2>
+            <p className="text-sm text-muted-foreground">
+              ヒューリスティックを用いた最短路探索
+            </p>
+          </Link>
+          <Link
+            href="/bidirectional-bfs"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">双方向BFS</h2>
+            <p className="text-sm text-muted-foreground">
+              始点と終点から同時にBFSして探索空間を削減する
+            </p>
+          </Link>
+          <Link
+            href="/01-bfs"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">0-1 BFS</h2>
+            <p className="text-sm text-muted-foreground">
+              辺の重みが0か1のグラフでの最短路をdequeで求める
+            </p>
+          </Link>
+          <Link
+            href="/dial"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Dial&apos;s Algorithm</h2>
+            <p className="text-sm text-muted-foreground">
+              バケット配列を使った最短路アルゴリズム
+            </p>
+          </Link>
+        </div>
+
+        {/* グラフ（マッチング・フロー） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">グラフ（マッチング・フロー）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/ford-fulkerson"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最大フロー (Ford-Fulkerson)</h2>
+            <p className="text-sm text-muted-foreground">
+              増加パスを繰り返し見つけて最大フローを求める
+            </p>
+          </Link>
+          <Link
+            href="/dinic"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最大フロー (Dinic)</h2>
+            <p className="text-sm text-muted-foreground">
+              レベルグラフとブロッキングフローで効率的に最大フローを求める
+            </p>
+          </Link>
+          <Link
+            href="/push-relabel"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最大フロー (Push-Relabel)</h2>
+            <p className="text-sm text-muted-foreground">
+              プリフローとラベル関数で最大フローを求める
+            </p>
+          </Link>
+          <Link
+            href="/min-cost-flow"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最小費用流 (Primal-Dual)</h2>
+            <p className="text-sm text-muted-foreground">
+              最小コストで所定量のフローを流す
+            </p>
+          </Link>
+          <Link
+            href="/hopcroft-karp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二部マッチング (Hopcroft-Karp)</h2>
+            <p className="text-sm text-muted-foreground">
+              二部グラフの最大マッチングを効率的に求める
+            </p>
+          </Link>
+          <Link
+            href="/hungarian"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二部マッチング (Hungarian)</h2>
+            <p className="text-sm text-muted-foreground">
+              コスト最小の完全マッチングを求める
+            </p>
+          </Link>
+          <Link
+            href="/blossom"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">一般マッチング (Edmonds&apos; Blossom)</h2>
+            <p className="text-sm text-muted-foreground">
+              一般グラフの最大マッチングを花の縮約で求める
+            </p>
+          </Link>
+          <Link
+            href="/min-cut"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最小カット</h2>
+            <p className="text-sm text-muted-foreground">
+              グラフを2つに分割する最小重みの辺集合を求める
+            </p>
+          </Link>
+          <Link
+            href="/gomory-hu"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Gomory-Hu Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              全頂点対間の最小カットを木構造で表現する
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
