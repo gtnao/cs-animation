@@ -609,27 +609,27 @@ algorithms:
   - name: ナップサック問題 (0-1)
     slug: knapsack-01
     category: dp
-    status: todo
+    status: done
 
   - name: ナップサック問題 (個数無制限)
     slug: knapsack-unbounded
     category: dp
-    status: todo
+    status: done
 
   - name: 最長共通部分列 (LCS)
     slug: lcs
     category: dp
-    status: todo
+    status: done
 
   - name: 最長増加部分列 (LIS)
     slug: lis
     category: dp
-    status: todo
+    status: done
 
   - name: 編集距離 (Levenshtein)
     slug: edit-distance
     category: dp
-    status: todo
+    status: done
 
   - name: 桁DP
     slug: digit-dp
@@ -654,7 +654,7 @@ algorithms:
   - name: 全方位木DP (Rerooting)
     slug: rerooting-dp
     category: dp
-    status: todo
+    status: done
 
   - name: SOS DP (Sum over Subsets)
     slug: sos-dp
@@ -664,7 +664,7 @@ algorithms:
   - name: 行列累乗 DP
     slug: matrix-exponentiation-dp
     category: dp
-    status: todo
+    status: done
 
   - name: Convex Hull Trick
     slug: convex-hull-trick
@@ -674,7 +674,7 @@ algorithms:
   - name: Divide & Conquer Optimization
     slug: dnc-optimization
     category: dp
-    status: todo
+    status: done
 
   - name: Knuth's Optimization
     slug: knuth-optimization
@@ -684,7 +684,7 @@ algorithms:
   - name: LARSCH Algorithm
     slug: larsch
     category: dp
-    status: todo
+    status: done
 
   - name: Alien DP (Lagrangian Relaxation)
     slug: alien-dp
@@ -694,7 +694,7 @@ algorithms:
   - name: 連結性DP (Profile DP / Broken Profile)
     slug: profile-dp
     category: dp
-    status: todo
+    status: done
 
   - name: Monge性とSMWAK
     slug: monge-smawk
@@ -751,72 +751,72 @@ algorithms:
   - name: ユークリッドの互除法
     slug: gcd
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 拡張ユークリッドの互除法
     slug: ext-gcd
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 中国剰余定理 (CRT)
     slug: crt
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: エラトステネスの篩
     slug: sieve-of-eratosthenes
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 線形篩
     slug: linear-sieve
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: メビウス関数・メビウスの反転公式
     slug: mobius
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: オイラーのφ関数
     slug: euler-totient
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 高速べき乗 (繰り返し二乗法)
     slug: fast-pow
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 離散対数 (Baby-step Giant-step)
     slug: bsgs
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: Miller-Rabin素数判定
     slug: miller-rabin
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: Pollard's rho法
     slug: pollard-rho
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: 原始根
     slug: primitive-root
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: フロアサム (Floor Sum)
     slug: floor-sum
     category: math-number-theory
-    status: todo
+    status: done
 
   - name: Stern-Brocot Tree
     slug: stern-brocot
     category: math-number-theory
-    status: todo
+    status: done
 
   # ── 数学（線形代数） ──
   - name: 行列積
@@ -853,278 +853,278 @@ algorithms:
   - name: FFT (高速フーリエ変換)
     slug: fft
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: NTT (数論変換)
     slug: ntt
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: 任意modでの畳み込み
     slug: arbitrary-mod-convolution
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: Karatsuba法
     slug: karatsuba
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: 多項式の逆元・除算
     slug: polynomial-inverse
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: 多項式の対数・指数
     slug: polynomial-log-exp
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: FPS (形式的べき級数) 全般
     slug: fps
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: 高速ゼータ変換 / メビウス変換
     slug: zeta-mobius-transform
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: Hadamard変換 (XOR畳み込み)
     slug: hadamard-transform
     category: math-polynomial
-    status: todo
+    status: done
 
   - name: Subset Convolution
     slug: subset-convolution
     category: math-polynomial
-    status: todo
+    status: done
 
   # ── 数学（組合せ・確率） ──
   - name: 二項係数 (mod p)
     slug: binomial-coefficient
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: Lucasの定理
     slug: lucas-theorem
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: カタラン数
     slug: catalan-number
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: スターリング数
     slug: stirling-number
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: ベル数
     slug: bell-number
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: 包除原理
     slug: inclusion-exclusion
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: バーンサイドの補題
     slug: burnside
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: ポリアの数え上げ定理
     slug: polya
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: 行列木定理 (Kirchhoff)
     slug: matrix-tree-theorem
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: ラグランジュ補間
     slug: lagrange-interpolation
     category: math-combinatorics
-    status: todo
+    status: done
 
   - name: Multipoint Evaluation
     slug: multipoint-evaluation
     category: math-combinatorics
-    status: todo
+    status: done
 
   # ── 計算幾何 ──
   - name: 凸包 (Graham Scan / Andrew's Monotone Chain)
     slug: convex-hull
     category: geometry
-    status: todo
+    status: done
 
   - name: 線分交差判定
     slug: segment-intersection
     category: geometry
-    status: todo
+    status: done
 
   - name: 点の内包判定
     slug: point-in-polygon
     category: geometry
-    status: todo
+    status: done
 
   - name: 最近点対 (Closest Pair)
     slug: closest-pair
     category: geometry
-    status: todo
+    status: done
 
   - name: ボロノイ図
     slug: voronoi
     category: geometry
-    status: todo
+    status: done
 
   - name: ドロネー三角形分割
     slug: delaunay
     category: geometry
-    status: todo
+    status: done
 
   - name: 半平面交差
     slug: half-plane-intersection
     category: geometry
-    status: todo
+    status: done
 
   - name: 凸多角形の切断
     slug: polygon-clipping
     category: geometry
-    status: todo
+    status: done
 
   - name: 回転キャリパー法
     slug: rotating-calipers
     category: geometry
-    status: todo
+    status: done
 
   - name: ミンコフスキー和
     slug: minkowski-sum
     category: geometry
-    status: todo
+    status: done
 
   # ── ゲーム理論 ──
   - name: Grundy数 (Sprague-Grundy定理)
     slug: sprague-grundy
     category: game-theory
-    status: todo
+    status: done
 
   - name: Nim
     slug: nim
     category: game-theory
-    status: todo
+    status: done
 
   - name: Minimax / Alpha-Beta剪定
     slug: minimax-alpha-beta
     category: game-theory
-    status: todo
+    status: done
 
   - name: 後退解析 (Retrograde Analysis)
     slug: retrograde-analysis
     category: game-theory
-    status: todo
+    status: done
 
   # ── その他 ──
   - name: 座標圧縮
     slug: coordinate-compression
     category: misc
-    status: todo
+    status: done
 
   - name: ランレングス圧縮
     slug: run-length-encoding
     category: misc
-    status: todo
+    status: done
 
   - name: しゃくとり法 (Two Pointers)
     slug: two-pointers
     category: misc
-    status: todo
+    status: done
 
   - name: スライディングウィンドウ
     slug: sliding-window
     category: misc
-    status: todo
+    status: done
 
   - name: Monotone Stack
     slug: monotone-stack
     category: misc
-    status: todo
+    status: done
 
   - name: Monotone Queue (Sliding Window Minimum)
     slug: monotone-queue
     category: misc
-    status: todo
+    status: done
 
   - name: Offline Query (クエリ先読み)
     slug: offline-query
     category: misc
-    status: todo
+    status: done
 
   - name: Rollback可能Union-Find
     slug: rollback-union-find
     category: misc
-    status: todo
+    status: done
 
   - name: オフライン削除 (Offline Dynamic Connectivity)
     slug: offline-dynamic-connectivity
     category: misc
-    status: todo
+    status: done
 
   - name: マージテク (Small to Large)
     slug: small-to-large
     category: misc
-    status: todo
+    status: done
 
   - name: Randomized Algorithm (乱択)
     slug: randomized
     category: misc
-    status: todo
+    status: done
 
   - name: Parallel Binary Search
     slug: parallel-binary-search
     category: misc
-    status: todo
+    status: done
 
   - name: Li Chao Tree
     slug: li-chao-tree
     category: misc
-    status: todo
+    status: done
 
   - name: Cartesian Tree
     slug: cartesian-tree
     category: misc
-    status: todo
+    status: done
 
   - name: Undo可能データ構造
     slug: undoable-data-structure
     category: misc
-    status: todo
+    status: done
 
   - name: 永続データ構造全般
     slug: persistent-data-structures
     category: misc
-    status: todo
+    status: done
 
   - name: Matroid (マトロイド)
     slug: matroid
     category: misc
-    status: todo
+    status: done
 
   - name: Matroid Intersection
     slug: matroid-intersection
     category: misc
-    status: todo
+    status: done
 
   - name: 最小全域有向木 (Edmonds' Algorithm)
     slug: minimum-spanning-arborescence
     category: misc
-    status: todo
+    status: done
 
   - name: Dominator Tree
     slug: dominator-tree
     category: misc
-    status: todo
+    status: done
