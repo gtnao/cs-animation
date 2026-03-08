@@ -677,6 +677,92 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* データ構造（平衡二分探索木） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">データ構造（平衡二分探索木）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/bst"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二分探索木 (BST)</h2>
+            <p className="text-sm text-muted-foreground">
+              順序を保つ基本的な木構造
+            </p>
+          </Link>
+          <Link
+            href="/avl-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">AVL木</h2>
+            <p className="text-sm text-muted-foreground">
+              高さバランスを保つ平衡二分探索木
+            </p>
+          </Link>
+          <Link
+            href="/red-black-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">赤黒木</h2>
+            <p className="text-sm text-muted-foreground">
+              色による制約で平衡を保つ二分探索木
+            </p>
+          </Link>
+          <Link
+            href="/splay-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Splay木</h2>
+            <p className="text-sm text-muted-foreground">
+              アクセスしたノードを根に持ち上げる自己調整木
+            </p>
+          </Link>
+          <Link
+            href="/treap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Treap</h2>
+            <p className="text-sm text-muted-foreground">
+              BST と Heap の性質を組み合わせたランダム化木
+            </p>
+          </Link>
+          <Link
+            href="/scapegoat-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Scapegoat木</h2>
+            <p className="text-sm text-muted-foreground">
+              不均衡な部分木を再構築して平衡を維持する
+            </p>
+          </Link>
+          <Link
+            href="/b-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">B木</h2>
+            <p className="text-sm text-muted-foreground">
+              多分岐の平衡探索木でディスクアクセスを最適化
+            </p>
+          </Link>
+          <Link
+            href="/b-plus-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">B+木</h2>
+            <p className="text-sm text-muted-foreground">
+              葉にデータを集約しリーフ間をリンクしたB木の改良版
+            </p>
+          </Link>
+          <Link
+            href="/skip-list"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Skip List</h2>
+            <p className="text-sm text-muted-foreground">
+              多段リンクリストで確率的に平衡を実現する
+            </p>
+          </Link>
+        </div>
+
         {/* データ構造（木クエリ） */}
         <h2 className="text-xl font-bold mt-8 mb-3">データ構造（木クエリ）</h2>
         <div className="space-y-2">
