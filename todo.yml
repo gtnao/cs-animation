@@ -558,52 +558,52 @@ algorithms:
   - name: Fibonacci Heap
     slug: fibonacci-heap
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Leftist Heap (Mergeable Heap)
     slug: leftist-heap
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Pairing Heap
     slug: pairing-heap
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Skew Heap
     slug: skew-heap
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Interval Tree
     slug: interval-tree
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: k-d Tree
     slug: kd-tree
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Bloom Filter
     slug: bloom-filter
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Count-Min Sketch
     slug: count-min-sketch
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Persistent Array
     slug: persistent-array
     category: data-structure-advanced
-    status: todo
+    status: done
 
   - name: Rope
     slug: rope
     category: data-structure-advanced
-    status: todo
+    status: done
 
   # ── 動的計画法 ──
   - name: ナップサック問題 (0-1)
@@ -634,22 +634,22 @@ algorithms:
   - name: 桁DP
     slug: digit-dp
     category: dp
-    status: todo
+    status: done
 
   - name: ビットDP (巡回セールスマン等)
     slug: bitmask-dp
     category: dp
-    status: todo
+    status: done
 
   - name: 区間DP
     slug: interval-dp
     category: dp
-    status: todo
+    status: done
 
   - name: 木DP
     slug: tree-dp
     category: dp
-    status: todo
+    status: done
 
   - name: 全方位木DP (Rerooting)
     slug: rerooting-dp
@@ -659,7 +659,7 @@ algorithms:
   - name: SOS DP (Sum over Subsets)
     slug: sos-dp
     category: dp
-    status: todo
+    status: done
 
   - name: 行列累乗 DP
     slug: matrix-exponentiation-dp
@@ -669,7 +669,7 @@ algorithms:
   - name: Convex Hull Trick
     slug: convex-hull-trick
     category: dp
-    status: todo
+    status: done
 
   - name: Divide & Conquer Optimization
     slug: dnc-optimization
@@ -679,7 +679,7 @@ algorithms:
   - name: Knuth's Optimization
     slug: knuth-optimization
     category: dp
-    status: todo
+    status: done
 
   - name: LARSCH Algorithm
     slug: larsch
@@ -689,7 +689,7 @@ algorithms:
   - name: Alien DP (Lagrangian Relaxation)
     slug: alien-dp
     category: dp
-    status: todo
+    status: done
 
   - name: 連結性DP (Profile DP / Broken Profile)
     slug: profile-dp
@@ -699,53 +699,53 @@ algorithms:
   - name: Monge性とSMWAK
     slug: monge-smawk
     category: dp
-    status: todo
+    status: done
 
   # ── 探索 ──
   - name: 二分探索
     slug: binary-search
     category: search
-    status: todo
+    status: done
 
   - name: 三分探索
     slug: ternary-search
     category: search
-    status: todo
+    status: done
 
   - name: 黄金分割探索
     slug: golden-section-search
     category: search
-    status: todo
+    status: done
 
   - name: 半分全列挙 (Meet in the Middle)
     slug: meet-in-the-middle
     category: search
-    status: todo
+    status: done
 
   - name: 枝刈り全探索
     slug: pruning-search
     category: search
-    status: todo
+    status: done
 
   - name: IDA*
     slug: ida-star
     category: search
-    status: todo
+    status: done
 
   - name: ビームサーチ
     slug: beam-search
     category: search
-    status: todo
+    status: done
 
   - name: 焼きなまし法
     slug: simulated-annealing
     category: search
-    status: todo
+    status: done
 
   - name: 遺伝的アルゴリズム
     slug: genetic-algorithm
     category: search
-    status: todo
+    status: done
 
   # ── 数学（整数論） ──
   - name: ユークリッドの互除法
@@ -822,32 +822,32 @@ algorithms:
   - name: 行列積
     slug: matrix-multiplication
     category: math-linear-algebra
-    status: todo
+    status: done
 
   - name: 行列累乗
     slug: matrix-exponentiation
     category: math-linear-algebra
-    status: todo
+    status: done
 
   - name: ガウスの消去法
     slug: gaussian-elimination
     category: math-linear-algebra
-    status: todo
+    status: done
 
   - name: ガウスの消去法 (mod 2, ビット)
     slug: gaussian-elimination-mod2
     category: math-linear-algebra
-    status: todo
+    status: done
 
   - name: 行列式 (Determinant)
     slug: determinant
     category: math-linear-algebra
-    status: todo
+    status: done
 
   - name: 線形基底 (Linear Basis / XOR Basis)
     slug: linear-basis
     category: math-linear-algebra
-    status: todo
+    status: done
 
   # ── 数学（多項式・変換） ──
   - name: FFT (高速フーリエ変換)
