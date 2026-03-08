@@ -1339,6 +1339,92 @@ export default function Home() {
             </p>
           </Link>
         </div>
+
+        {/* 動的計画法 */}
+        <h2 className="text-xl font-bold mt-8 mb-3">動的計画法</h2>
+        <div className="space-y-2">
+          <Link
+            href="/digit-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">桁DP</h2>
+            <p className="text-sm text-muted-foreground">
+              数の各桁を状態として条件を満たす数を数え上げる
+            </p>
+          </Link>
+          <Link
+            href="/bitmask-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ビットDP</h2>
+            <p className="text-sm text-muted-foreground">
+              集合をビットマスクで表現し部分集合を状態とするDP
+            </p>
+          </Link>
+          <Link
+            href="/interval-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">区間DP</h2>
+            <p className="text-sm text-muted-foreground">
+              区間を分割・統合して最適解を求めるDP
+            </p>
+          </Link>
+          <Link
+            href="/tree-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">木DP</h2>
+            <p className="text-sm text-muted-foreground">
+              木構造上で葉から根に向かって集約するDP
+            </p>
+          </Link>
+          <Link
+            href="/sos-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">SOS DP (Sum over Subsets)</h2>
+            <p className="text-sm text-muted-foreground">
+              全部分集合の和を高速に計算するDP
+            </p>
+          </Link>
+          <Link
+            href="/convex-hull-trick"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Convex Hull Trick</h2>
+            <p className="text-sm text-muted-foreground">
+              一次関数群の最小値クエリでDP遷移を高速化する
+            </p>
+          </Link>
+          <Link
+            href="/knuth-optimization"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Knuth's Optimization</h2>
+            <p className="text-sm text-muted-foreground">
+              Monge性を利用して区間DPの遷移を高速化する
+            </p>
+          </Link>
+          <Link
+            href="/alien-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Alien DP (Lagrangian Relaxation)</h2>
+            <p className="text-sm text-muted-foreground">
+              ラグランジュ緩和で個数制約付きDPを高速に解く
+            </p>
+          </Link>
+          <Link
+            href="/monge-smawk"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Monge性とSMAWK</h2>
+            <p className="text-sm text-muted-foreground">
+              Monge行列の行最小値を線形時間で求める
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
