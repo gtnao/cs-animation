@@ -781,6 +781,119 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* データ構造（区間・列） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">データ構造（区間・列）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/segment-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">セグメント木</h2>
+            <p className="text-sm text-muted-foreground">
+              区間クエリと点更新を O(log n) で行う木構造
+            </p>
+          </Link>
+          <Link
+            href="/lazy-segment-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">遅延評価セグメント木</h2>
+            <p className="text-sm text-muted-foreground">
+              区間更新と区間クエリを O(log n) で行う
+            </p>
+          </Link>
+          <Link
+            href="/persistent-segment-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">永続セグメント木</h2>
+            <p className="text-sm text-muted-foreground">
+              過去のバージョンを保持するセグメント木
+            </p>
+          </Link>
+          <Link
+            href="/dynamic-segment-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">動的セグメント木</h2>
+            <p className="text-sm text-muted-foreground">
+              必要なノードのみ動的に生成するセグメント木
+            </p>
+          </Link>
+          <Link
+            href="/merge-sort-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Merge Sort Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              各ノードにソート済み配列を持つセグメント木
+            </p>
+          </Link>
+          <Link
+            href="/fenwick-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">BIT (Fenwick Tree)</h2>
+            <p className="text-sm text-muted-foreground">
+              累積和の点更新と区間クエリを効率的に行う
+            </p>
+          </Link>
+          <Link
+            href="/fenwick-tree-2d"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">2次元BIT</h2>
+            <p className="text-sm text-muted-foreground">
+              2次元の累積和クエリを効率的に行う
+            </p>
+          </Link>
+          <Link
+            href="/sqrt-decomposition"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">平方分割</h2>
+            <p className="text-sm text-muted-foreground">
+              配列を √n 個のブロックに分割してクエリを処理する
+            </p>
+          </Link>
+          <Link
+            href="/mos-algorithm"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Mo&apos;s Algorithm</h2>
+            <p className="text-sm text-muted-foreground">
+              オフラインクエリを平方分割で効率的に処理する
+            </p>
+          </Link>
+          <Link
+            href="/sparse-table"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Sparse Table</h2>
+            <p className="text-sm text-muted-foreground">
+              静的な区間最小値クエリを O(1) で応答する
+            </p>
+          </Link>
+          <Link
+            href="/disjoint-sparse-table"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Disjoint Sparse Table</h2>
+            <p className="text-sm text-muted-foreground">
+              冪等でない演算にも対応する O(1) 区間クエリ
+            </p>
+          </Link>
+          <Link
+            href="/wavelet-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Wavelet Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              区間k番目や区間頻度を効率的に求める木構造
+            </p>
+          </Link>
+        </div>
+
         {/* データ構造（平衡二分探索木） */}
         <h2 className="text-xl font-bold mt-8 mb-3">データ構造（平衡二分探索木）</h2>
         <div className="space-y-2">
