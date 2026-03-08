@@ -1424,6 +1424,616 @@ export default function Home() {
               Monge行列の行最小値を線形時間で求める
             </p>
           </Link>
+          <Link
+            href="/knapsack-01"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ナップサック問題 (0-1)</h2>
+            <p className="text-sm text-muted-foreground">
+              各品物を選ぶか選ばないかで価値を最大化する
+            </p>
+          </Link>
+          <Link
+            href="/knapsack-unbounded"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ナップサック問題 (個数無制限)</h2>
+            <p className="text-sm text-muted-foreground">
+              各品物を何個でも選べるナップサック問題
+            </p>
+          </Link>
+          <Link
+            href="/lcs"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最長共通部分列 (LCS)</h2>
+            <p className="text-sm text-muted-foreground">
+              2つの列に共通する最長の部分列を求める
+            </p>
+          </Link>
+          <Link
+            href="/lis"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最長増加部分列 (LIS)</h2>
+            <p className="text-sm text-muted-foreground">
+              数列中の最長の狭義単調増加部分列を求める
+            </p>
+          </Link>
+          <Link
+            href="/edit-distance"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">編集距離 (Levenshtein)</h2>
+            <p className="text-sm text-muted-foreground">
+              2つの文字列間の最小編集操作数を求める
+            </p>
+          </Link>
+          <Link
+            href="/rerooting-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">全方位木DP (Rerooting)</h2>
+            <p className="text-sm text-muted-foreground">
+              全頂点を根とした木DPの結果を効率的に求める
+            </p>
+          </Link>
+          <Link
+            href="/matrix-exponentiation-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">行列累乗 DP</h2>
+            <p className="text-sm text-muted-foreground">
+              線形漸化式を行列累乗で高速に計算する
+            </p>
+          </Link>
+          <Link
+            href="/dnc-optimization"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Divide & Conquer Optimization</h2>
+            <p className="text-sm text-muted-foreground">
+              分割統治でDPの遷移を高速化する
+            </p>
+          </Link>
+          <Link
+            href="/larsch"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">LARSCH Algorithm</h2>
+            <p className="text-sm text-muted-foreground">
+              オンラインでConcave SMAWK問題を解くアルゴリズム
+            </p>
+          </Link>
+          <Link
+            href="/profile-dp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">連結性DP (Profile DP)</h2>
+            <p className="text-sm text-muted-foreground">
+              グリッドの列断面をプロファイルとして管理するDP
+            </p>
+          </Link>
+        </div>
+
+        {/* 数学（多項式・変換） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">数学（多項式・変換）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/fft"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">FFT (高速フーリエ変換)</h2>
+            <p className="text-sm text-muted-foreground">
+              多項式の乗算をO(n log n)で計算する
+            </p>
+          </Link>
+          <Link
+            href="/ntt"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">NTT (数論変換)</h2>
+            <p className="text-sm text-muted-foreground">
+              有限体上で高速フーリエ変換を行う
+            </p>
+          </Link>
+          <Link
+            href="/arbitrary-mod-convolution"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">任意modでの畳み込み</h2>
+            <p className="text-sm text-muted-foreground">
+              任意の法での多項式乗算を実現する
+            </p>
+          </Link>
+          <Link
+            href="/karatsuba"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Karatsuba法</h2>
+            <p className="text-sm text-muted-foreground">
+              分割統治による高速な多項式・整数乗算
+            </p>
+          </Link>
+          <Link
+            href="/polynomial-inverse"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">多項式の逆元・除算</h2>
+            <p className="text-sm text-muted-foreground">
+              形式的べき級数の逆元をニュートン法で求める
+            </p>
+          </Link>
+          <Link
+            href="/polynomial-log-exp"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">多項式の対数・指数</h2>
+            <p className="text-sm text-muted-foreground">
+              形式的べき級数のlog・expを計算する
+            </p>
+          </Link>
+          <Link
+            href="/fps"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">FPS (形式的べき級数)</h2>
+            <p className="text-sm text-muted-foreground">
+              形式的べき級数の各種演算をまとめて扱う
+            </p>
+          </Link>
+          <Link
+            href="/zeta-mobius-transform"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">高速ゼータ変換 / メビウス変換</h2>
+            <p className="text-sm text-muted-foreground">
+              集合関数の累積和と差分を高速に計算する
+            </p>
+          </Link>
+          <Link
+            href="/hadamard-transform"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Hadamard変換 (XOR畳み込み)</h2>
+            <p className="text-sm text-muted-foreground">
+              XOR畳み込みをアダマール変換で高速に行う
+            </p>
+          </Link>
+          <Link
+            href="/subset-convolution"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Subset Convolution</h2>
+            <p className="text-sm text-muted-foreground">
+              集合のサイズを考慮した部分集合畳み込み
+            </p>
+          </Link>
+        </div>
+
+        {/* 数学（組合せ） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">数学（組合せ）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/binomial-coefficient"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二項係数 (mod p)</h2>
+            <p className="text-sm text-muted-foreground">
+              素数modでの二項係数を前処理で高速に求める
+            </p>
+          </Link>
+          <Link
+            href="/lucas-theorem"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Lucasの定理</h2>
+            <p className="text-sm text-muted-foreground">
+              大きなnに対する二項係数を素数modで求める
+            </p>
+          </Link>
+          <Link
+            href="/catalan-number"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">カタラン数</h2>
+            <p className="text-sm text-muted-foreground">
+              括弧列・二分木・格子経路などを数え上げる
+            </p>
+          </Link>
+          <Link
+            href="/stirling-number"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">スターリング数</h2>
+            <p className="text-sm text-muted-foreground">
+              集合の分割数・順列の巡回数を数え上げる
+            </p>
+          </Link>
+          <Link
+            href="/bell-number"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ベル数</h2>
+            <p className="text-sm text-muted-foreground">
+              集合の分割の総数を求める
+            </p>
+          </Link>
+          <Link
+            href="/inclusion-exclusion"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">包除原理</h2>
+            <p className="text-sm text-muted-foreground">
+              和集合の要素数を交互に加減して求める
+            </p>
+          </Link>
+          <Link
+            href="/burnside"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">バーンサイドの補題</h2>
+            <p className="text-sm text-muted-foreground">
+              対称性を考慮した場合の数を群作用で求める
+            </p>
+          </Link>
+          <Link
+            href="/polya"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ポリアの数え上げ定理</h2>
+            <p className="text-sm text-muted-foreground">
+              彩色の数え上げを巡回指標で行う
+            </p>
+          </Link>
+          <Link
+            href="/matrix-tree-theorem"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">行列木定理 (Kirchhoff)</h2>
+            <p className="text-sm text-muted-foreground">
+              グラフの全域木の数をラプラシアン行列式で求める
+            </p>
+          </Link>
+          <Link
+            href="/lagrange-interpolation"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ラグランジュ補間</h2>
+            <p className="text-sm text-muted-foreground">
+              n+1個の点を通る多項式を復元する
+            </p>
+          </Link>
+          <Link
+            href="/multipoint-evaluation"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Multipoint Evaluation</h2>
+            <p className="text-sm text-muted-foreground">
+              多項式を複数点で同時に評価する
+            </p>
+          </Link>
+        </div>
+
+        {/* 計算幾何 */}
+        <h2 className="text-xl font-bold mt-8 mb-3">計算幾何</h2>
+        <div className="space-y-2">
+          <Link
+            href="/convex-hull"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">凸包</h2>
+            <p className="text-sm text-muted-foreground">
+              点集合を囲む最小の凸多角形を求める
+            </p>
+          </Link>
+          <Link
+            href="/segment-intersection"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">線分交差判定</h2>
+            <p className="text-sm text-muted-foreground">
+              2つの線分が交差するかを判定する
+            </p>
+          </Link>
+          <Link
+            href="/point-in-polygon"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">点の内包判定</h2>
+            <p className="text-sm text-muted-foreground">
+              点が多角形の内部にあるかを判定する
+            </p>
+          </Link>
+          <Link
+            href="/closest-pair"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最近点対</h2>
+            <p className="text-sm text-muted-foreground">
+              最も距離が近い2点を分割統治で求める
+            </p>
+          </Link>
+          <Link
+            href="/voronoi"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ボロノイ図</h2>
+            <p className="text-sm text-muted-foreground">
+              各母点に最も近い領域で平面を分割する
+            </p>
+          </Link>
+          <Link
+            href="/delaunay"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ドロネー三角形分割</h2>
+            <p className="text-sm text-muted-foreground">
+              外接円条件を満たす三角形分割を構築する
+            </p>
+          </Link>
+          <Link
+            href="/half-plane-intersection"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">半平面交差</h2>
+            <p className="text-sm text-muted-foreground">
+              複数の半平面の共通領域を求める
+            </p>
+          </Link>
+          <Link
+            href="/polygon-clipping"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">凸多角形の切断</h2>
+            <p className="text-sm text-muted-foreground">
+              直線で凸多角形を切断して一方を得る
+            </p>
+          </Link>
+          <Link
+            href="/rotating-calipers"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">回転キャリパー法</h2>
+            <p className="text-sm text-muted-foreground">
+              凸包上の最遠点対を回転する平行線で求める
+            </p>
+          </Link>
+          <Link
+            href="/minkowski-sum"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ミンコフスキー和</h2>
+            <p className="text-sm text-muted-foreground">
+              2つの凸多角形のミンコフスキー和を計算する
+            </p>
+          </Link>
+        </div>
+
+        {/* ゲーム理論 */}
+        <h2 className="text-xl font-bold mt-8 mb-3">ゲーム理論</h2>
+        <div className="space-y-2">
+          <Link
+            href="/sprague-grundy"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Grundy数 (Sprague-Grundy定理)</h2>
+            <p className="text-sm text-muted-foreground">
+              組合せゲームの勝敗をGrundy数で解析する
+            </p>
+          </Link>
+          <Link
+            href="/nim"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Nim</h2>
+            <p className="text-sm text-muted-foreground">
+              石取りゲームの必勝戦略をXORで求める
+            </p>
+          </Link>
+          <Link
+            href="/minimax-alpha-beta"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Minimax / Alpha-Beta剪定</h2>
+            <p className="text-sm text-muted-foreground">
+              ゲーム木を探索して最善手を求める
+            </p>
+          </Link>
+          <Link
+            href="/retrograde-analysis"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">後退解析</h2>
+            <p className="text-sm text-muted-foreground">
+              終局状態から逆向きにゲームの勝敗を決定する
+            </p>
+          </Link>
+        </div>
+
+        {/* その他 */}
+        <h2 className="text-xl font-bold mt-8 mb-3">その他</h2>
+        <div className="space-y-2">
+          <Link
+            href="/coordinate-compression"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">座標圧縮</h2>
+            <p className="text-sm text-muted-foreground">
+              大きな値の座標を連続する小さな値に変換する
+            </p>
+          </Link>
+          <Link
+            href="/run-length-encoding"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ランレングス圧縮</h2>
+            <p className="text-sm text-muted-foreground">
+              連続する同一要素を (値, 個数) の組に圧縮する
+            </p>
+          </Link>
+          <Link
+            href="/two-pointers"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">しゃくとり法 (Two Pointers)</h2>
+            <p className="text-sm text-muted-foreground">
+              2つのポインタで区間を伸縮しながら探索する
+            </p>
+          </Link>
+          <Link
+            href="/sliding-window"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">スライディングウィンドウ</h2>
+            <p className="text-sm text-muted-foreground">
+              固定幅のウィンドウをスライドして集計する
+            </p>
+          </Link>
+          <Link
+            href="/monotone-stack"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Monotone Stack</h2>
+            <p className="text-sm text-muted-foreground">
+              単調性を保つスタックで次に大きい/小さい要素を求める
+            </p>
+          </Link>
+          <Link
+            href="/monotone-queue"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Monotone Queue</h2>
+            <p className="text-sm text-muted-foreground">
+              スライディングウィンドウ内の最小/最大値を管理する
+            </p>
+          </Link>
+          <Link
+            href="/offline-query"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Offline Query</h2>
+            <p className="text-sm text-muted-foreground">
+              クエリを先読みして効率的な順序で処理する
+            </p>
+          </Link>
+          <Link
+            href="/rollback-union-find"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Rollback可能Union-Find</h2>
+            <p className="text-sm text-muted-foreground">
+              操作の巻き戻しが可能なUnion-Find
+            </p>
+          </Link>
+          <Link
+            href="/offline-dynamic-connectivity"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">オフライン削除</h2>
+            <p className="text-sm text-muted-foreground">
+              辺の追加と削除をオフラインで処理する
+            </p>
+          </Link>
+          <Link
+            href="/small-to-large"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">マージテク (Small to Large)</h2>
+            <p className="text-sm text-muted-foreground">
+              小さい集合を大きい集合にマージして効率化する
+            </p>
+          </Link>
+          <Link
+            href="/randomized"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Randomized Algorithm</h2>
+            <p className="text-sm text-muted-foreground">
+              乱数を利用して効率的に問題を解く手法
+            </p>
+          </Link>
+          <Link
+            href="/parallel-binary-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Parallel Binary Search</h2>
+            <p className="text-sm text-muted-foreground">
+              複数の二分探索を並列化して処理する
+            </p>
+          </Link>
+          <Link
+            href="/li-chao-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Li Chao Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              直線の追加と点クエリを効率的に処理する
+            </p>
+          </Link>
+          <Link
+            href="/cartesian-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Cartesian Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              配列からヒープ条件を満たす二分木を構築する
+            </p>
+          </Link>
+          <Link
+            href="/undoable-data-structure"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Undo可能データ構造</h2>
+            <p className="text-sm text-muted-foreground">
+              操作の取り消しが可能なデータ構造
+            </p>
+          </Link>
+          <Link
+            href="/persistent-data-structures"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">永続データ構造</h2>
+            <p className="text-sm text-muted-foreground">
+              過去の全バージョンにアクセス可能なデータ構造
+            </p>
+          </Link>
+          <Link
+            href="/matroid"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Matroid (マトロイド)</h2>
+            <p className="text-sm text-muted-foreground">
+              貪欲法の正当性を保証する抽象的な構造
+            </p>
+          </Link>
+          <Link
+            href="/matroid-intersection"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Matroid Intersection</h2>
+            <p className="text-sm text-muted-foreground">
+              2つのマトロイドの共通独立集合を求める
+            </p>
+          </Link>
+          <Link
+            href="/minimum-spanning-arborescence"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最小全域有向木</h2>
+            <p className="text-sm text-muted-foreground">
+              有向グラフの最小全域有向木をEdmonds法で求める
+            </p>
+          </Link>
+          <Link
+            href="/dominator-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Dominator Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              有向グラフの支配木を構築する
+            </p>
+          </Link>
         </div>
       </div>
     </div>
