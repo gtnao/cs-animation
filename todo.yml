@@ -323,236 +323,236 @@ algorithms:
   - name: 二部グラフ判定
     slug: bipartite-check
     category: graph-misc
-    status: todo
+    status: done
 
   - name: サイクル検出
     slug: cycle-detection
     category: graph-misc
-    status: todo
+    status: done
 
   - name: グラフ彩色
     slug: graph-coloring
     category: graph-misc
-    status: todo
+    status: done
 
   - name: 2-SAT
     slug: two-sat
     category: graph-misc
-    status: todo
+    status: done
 
   - name: 木の直径
     slug: tree-diameter
     category: graph-misc
-    status: todo
+    status: done
 
   - name: 木の重心
     slug: tree-centroid
     category: graph-misc
-    status: todo
+    status: done
 
   - name: 重心分解 (Centroid Decomposition)
     slug: centroid-decomposition
     category: graph-misc
-    status: todo
+    status: done
 
   - name: Auxiliary Tree (Virtual Tree)
     slug: auxiliary-tree
     category: graph-misc
-    status: todo
+    status: done
 
   - name: Block Cut Tree
     slug: block-cut-tree
     category: graph-misc
-    status: todo
+    status: done
 
   - name: 木の同型判定
     slug: tree-isomorphism
     category: graph-misc
-    status: todo
+    status: done
 
   - name: Prüfer Sequence
     slug: prufer-sequence
     category: graph-misc
-    status: todo
+    status: done
 
   # ── データ構造（基本） ──
   - name: Stack
     slug: stack
     category: data-structure
-    status: todo
+    status: done
 
   - name: Queue
     slug: queue
     category: data-structure
-    status: todo
+    status: done
 
   - name: Deque
     slug: deque
     category: data-structure
-    status: todo
+    status: done
 
   - name: Priority Queue (Binary Heap)
     slug: binary-heap
     category: data-structure
-    status: todo
+    status: done
 
   - name: Linked List
     slug: linked-list
     category: data-structure
-    status: todo
+    status: done
 
   - name: Hash Table
     slug: hash-table
     category: data-structure
-    status: todo
+    status: done
 
   - name: Union-Find
     slug: union-find
     category: data-structure
-    status: todo
+    status: done
 
   - name: 重み付き Union-Find
     slug: weighted-union-find
     category: data-structure
-    status: todo
+    status: done
 
   # ── データ構造（平衡二分探索木） ──
   - name: 二分探索木 (BST)
     slug: bst
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: AVL木
     slug: avl-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: 赤黒木
     slug: red-black-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: Splay木
     slug: splay-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: Treap
     slug: treap
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: Scapegoat木
     slug: scapegoat-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: B木
     slug: b-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: B+木
     slug: b-plus-tree
     category: data-structure-tree
-    status: todo
+    status: done
 
   - name: Skip List
     slug: skip-list
     category: data-structure-tree
-    status: todo
+    status: done
 
   # ── データ構造（区間・列） ──
   - name: セグメント木
     slug: segment-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: 遅延評価セグメント木
     slug: lazy-segment-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: 永続セグメント木
     slug: persistent-segment-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: 動的セグメント木
     slug: dynamic-segment-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: Merge Sort Tree
     slug: merge-sort-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: BIT (Fenwick Tree)
     slug: fenwick-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: 2次元BIT
     slug: fenwick-tree-2d
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: 平方分割 (Sqrt Decomposition)
     slug: sqrt-decomposition
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: Mo's Algorithm
     slug: mos-algorithm
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: Sparse Table
     slug: sparse-table
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: Disjoint Sparse Table
     slug: disjoint-sparse-table
     category: data-structure-range
-    status: todo
+    status: done
 
   - name: Wavelet Tree
     slug: wavelet-tree
     category: data-structure-range
-    status: todo
+    status: done
 
   # ── データ構造（木クエリ） ──
   - name: 最小共通祖先 (LCA) - ダブリング
     slug: lca-doubling
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   - name: 最小共通祖先 (LCA) - Euler Tour + Sparse Table
     slug: lca-euler-tour
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   - name: Heavy-Light Decomposition
     slug: hld
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   - name: Euler Tour
     slug: euler-tour
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   - name: Link-Cut Tree
     slug: link-cut-tree
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   - name: 木上のパスクエリ
     slug: tree-path-query
     category: data-structure-tree-query
-    status: todo
+    status: done
 
   # ── データ構造（その他） ──
   - name: Fibonacci Heap
