@@ -5,6 +5,10 @@ import Link from "next/link";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useReadStatus } from "@/hooks/use-read-status";
 
+const TAB_CLASS_ACTIVE = "border-[#2D4855] text-[#2D4855]";
+const TAB_CLASS_INACTIVE =
+  "border-transparent text-muted-foreground hover:text-foreground";
+
 export function AlgorithmLayout({
   children,
   title,
@@ -18,8 +22,15 @@ export function AlgorithmLayout({
 }) {
   const pathname = usePathname();
   const isAnimation = pathname.endsWith("/animation");
+  const isRelated = pathname.endsWith("/related");
+  const isArticle = !isAnimation && !isRelated;
   const { readMap, toggleRead, isLoaded } = useReadStatus();
   const isRead = isLoaded && !!readMap[slug];
+
+  const tabClass = (active: boolean) =>
+    `px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${
+      active ? TAB_CLASS_ACTIVE : TAB_CLASS_INACTIVE
+    }`;
 
   return (
     <div className="min-h-screen bg-background">
@@ -50,34 +61,27 @@ export function AlgorithmLayout({
       <div className="border-b border-border bg-background">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex">
-            <Link
-              href={basePath}
-              className={`px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${
-                !isAnimation
-                  ? "border-[#2D4855] text-[#2D4855]"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              }`}
-            >
+            <Link href={basePath} className={tabClass(isArticle)}>
               解説
             </Link>
             <Link
               href={`${basePath}/animation`}
-              className={`px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${
-                isAnimation
-                  ? "border-[#2D4855] text-[#2D4855]"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              }`}
+              className={tabClass(isAnimation)}
             >
               アニメーション
+            </Link>
+            <Link
+              href={`${basePath}/related`}
+              className={tabClass(isRelated)}
+            >
+              関連
             </Link>
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        {children}
-      </div>
+      <div className="max-w-4xl mx-auto px-4 py-6">{children}</div>
     </div>
   );
 }
