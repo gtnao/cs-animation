@@ -599,6 +599,65 @@ export default function Home() {
             </p>
           </Link>
         </div>
+
+        {/* データ構造（木クエリ） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">データ構造（木クエリ）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/lca-doubling"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最小共通祖先 (LCA) - ダブリング</h2>
+            <p className="text-sm text-muted-foreground">
+              ダブリングで木上の最小共通祖先を求める
+            </p>
+          </Link>
+          <Link
+            href="/lca-euler-tour"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">最小共通祖先 (LCA) - Euler Tour</h2>
+            <p className="text-sm text-muted-foreground">
+              Euler Tour + Sparse Table で LCA を O(1) で求める
+            </p>
+          </Link>
+          <Link
+            href="/hld"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Heavy-Light Decomposition</h2>
+            <p className="text-sm text-muted-foreground">
+              木をヘビーチェーンに分解してパスクエリを効率化する
+            </p>
+          </Link>
+          <Link
+            href="/euler-tour"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Euler Tour</h2>
+            <p className="text-sm text-muted-foreground">
+              DFS で木を一次元列に変換する
+            </p>
+          </Link>
+          <Link
+            href="/link-cut-tree"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Link-Cut Tree</h2>
+            <p className="text-sm text-muted-foreground">
+              動的な木構造でパスクエリ・link・cut を効率的に行う
+            </p>
+          </Link>
+          <Link
+            href="/tree-path-query"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">木上のパスクエリ</h2>
+            <p className="text-sm text-muted-foreground">
+              木上のパスに対する集約クエリの各種手法
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
