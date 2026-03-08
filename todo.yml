@@ -8,316 +8,316 @@ algorithms:
   - name: KMP法
     slug: kmp
     category: string
-    status: todo
+    status: done
 
   - name: Aho-Corasick法
     slug: aho-corasick
     category: string
-    status: todo
+    status: done
 
   - name: Suffix Array
     slug: suffix-array
     category: string
-    status: todo
+    status: done
 
   - name: Suffix Array (SA-IS)
     slug: sa-is
     category: string
-    status: todo
+    status: done
 
   - name: LCP Array (Kasai's Algorithm)
     slug: lcp-array
     category: string
-    status: todo
+    status: done
 
   - name: Suffix Tree
     slug: suffix-tree
     category: string
-    status: todo
+    status: done
 
   - name: Suffix Automaton
     slug: suffix-automaton
     category: string
-    status: todo
+    status: done
 
   - name: Rolling Hash
     slug: rolling-hash
     category: string
-    status: todo
+    status: done
 
   - name: Rabin-Karp法
     slug: rabin-karp
     category: string
-    status: todo
+    status: done
 
   - name: Manacher's Algorithm
     slug: manacher
     category: string
-    status: todo
+    status: done
 
   - name: Trie
     slug: trie
     category: string
-    status: todo
+    status: done
 
   - name: Palindromic Tree (Eertree)
     slug: palindromic-tree
     category: string
-    status: todo
+    status: done
 
   - name: Burrows-Wheeler Transform
     slug: bwt
     category: string
-    status: todo
+    status: done
 
   - name: Run Length Encoding
     slug: rle
     category: string
-    status: todo
+    status: done
 
   - name: Lyndon Factorization (Duval's Algorithm)
     slug: lyndon
     category: string
-    status: todo
+    status: done
 
   - name: Minimum Rotation (Booth's Algorithm)
     slug: booth
     category: string
-    status: todo
+    status: done
 
   # ── ソート ──
   - name: Bubble Sort
     slug: bubble-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Selection Sort
     slug: selection-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Insertion Sort
     slug: insertion-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Merge Sort
     slug: merge-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Quick Sort
     slug: quick-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Heap Sort
     slug: heap-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Counting Sort
     slug: counting-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Radix Sort
     slug: radix-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Bucket Sort
     slug: bucket-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Shell Sort
     slug: shell-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Tim Sort
     slug: tim-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Intro Sort
     slug: intro-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Bitonic Sort
     slug: bitonic-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Pancake Sort
     slug: pancake-sort
     category: sorting
-    status: todo
+    status: done
 
   - name: Cycle Sort
     slug: cycle-sort
     category: sorting
-    status: todo
+    status: done
 
   # ── グラフ（探索・最短路） ──
   - name: BFS
     slug: bfs
     category: graph
-    status: todo
+    status: done
 
   - name: DFS
     slug: dfs
     category: graph
-    status: todo
+    status: done
 
   - name: Dijkstra法
     slug: dijkstra
     category: graph
-    status: todo
+    status: done
 
   - name: Bellman-Ford法
     slug: bellman-ford
     category: graph
-    status: todo
+    status: done
 
   - name: Warshall-Floyd法
     slug: warshall-floyd
     category: graph
-    status: todo
+    status: done
 
   - name: SPFA
     slug: spfa
     category: graph
-    status: todo
+    status: done
 
   - name: Johnson's Algorithm
     slug: johnson
     category: graph
-    status: todo
+    status: done
 
   - name: A*探索
     slug: a-star
     category: graph
-    status: todo
+    status: done
 
   - name: 双方向BFS
     slug: bidirectional-bfs
     category: graph
-    status: todo
+    status: done
 
   - name: 0-1 BFS
     slug: 01-bfs
     category: graph
-    status: todo
+    status: done
 
   - name: Dial's Algorithm
     slug: dial
     category: graph
-    status: todo
+    status: done
 
   # ── グラフ（木） ──
   - name: Kruskal法
     slug: kruskal
     category: graph-tree
-    status: todo
+    status: done
 
   - name: Prim法
     slug: prim
     category: graph-tree
-    status: todo
+    status: done
 
   - name: Borůvka法
     slug: boruvka
     category: graph-tree
-    status: todo
+    status: done
 
   - name: トポロジカルソート
     slug: topological-sort
     category: graph-tree
-    status: todo
+    status: done
 
   - name: 強連結成分分解 (Tarjan)
     slug: scc-tarjan
     category: graph-tree
-    status: todo
+    status: done
 
   - name: 強連結成分分解 (Kosaraju)
     slug: scc-kosaraju
     category: graph-tree
-    status: todo
+    status: done
 
   - name: 二重辺連結成分分解
     slug: two-edge-cc
     category: graph-tree
-    status: todo
+    status: done
 
   - name: 二重頂点連結成分分解
     slug: biconnected-components
     category: graph-tree
-    status: todo
+    status: done
 
   - name: 橋・関節点検出
     slug: bridges-articulation
     category: graph-tree
-    status: todo
+    status: done
 
   - name: オイラー路・オイラー閉路
     slug: euler-path
     category: graph-tree
-    status: todo
+    status: done
 
   - name: ハミルトン路 (DP)
     slug: hamiltonian-path
     category: graph-tree
-    status: todo
+    status: done
 
   # ── グラフ（マッチング・フロー） ──
   - name: 最大フロー (Ford-Fulkerson)
     slug: ford-fulkerson
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 最大フロー (Dinic)
     slug: dinic
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 最大フロー (Push-Relabel)
     slug: push-relabel
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 最小費用流 (Primal-Dual)
     slug: min-cost-flow
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 二部マッチング (Hopcroft-Karp)
     slug: hopcroft-karp
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 二部マッチング (Hungarian)
     slug: hungarian
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 一般マッチング (Edmonds' Blossom)
     slug: blossom
     category: graph-flow
-    status: todo
+    status: done
 
   - name: 最小カット
     slug: min-cut
     category: graph-flow
-    status: todo
+    status: done
 
   - name: Gomory-Hu Tree
     slug: gomory-hu
     category: graph-flow
-    status: todo
+    status: done
 
   # ── グラフ（その他） ──
   - name: 二部グラフ判定
