@@ -1134,6 +1134,67 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* 数学（整数論） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">数学（整数論）</h2>
+        <div className="space-y-2">
+          <Link href="/gcd" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">ユークリッドの互除法</h2>
+            <p className="text-sm text-muted-foreground">2つの整数の最大公約数を求める</p>
+          </Link>
+          <Link href="/ext-gcd" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">拡張ユークリッドの互除法</h2>
+            <p className="text-sm text-muted-foreground">ax + by = gcd(a,b) の整数解を求める</p>
+          </Link>
+          <Link href="/crt" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">中国剰余定理 (CRT)</h2>
+            <p className="text-sm text-muted-foreground">連立合同式の解を求める</p>
+          </Link>
+          <Link href="/sieve-of-eratosthenes" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">エラトステネスの篩</h2>
+            <p className="text-sm text-muted-foreground">N以下の素数を列挙する</p>
+          </Link>
+          <Link href="/linear-sieve" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">線形篩</h2>
+            <p className="text-sm text-muted-foreground">O(N)で素数と最小素因数を列挙する</p>
+          </Link>
+          <Link href="/mobius" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">メビウス関数・反転公式</h2>
+            <p className="text-sm text-muted-foreground">約数の包除に基づく反転公式</p>
+          </Link>
+          <Link href="/euler-totient" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">オイラーのφ関数</h2>
+            <p className="text-sm text-muted-foreground">nと互いに素な正整数の個数を求める</p>
+          </Link>
+          <Link href="/fast-pow" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">高速べき乗 (繰り返し二乗法)</h2>
+            <p className="text-sm text-muted-foreground">O(log n)でべき乗を計算する</p>
+          </Link>
+          <Link href="/bsgs" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">離散対数 (Baby-step Giant-step)</h2>
+            <p className="text-sm text-muted-foreground">離散対数問題をO(√p)で解く</p>
+          </Link>
+          <Link href="/miller-rabin" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">Miller-Rabin素数判定</h2>
+            <p className="text-sm text-muted-foreground">確率的な高速素数判定法</p>
+          </Link>
+          <Link href="/pollard-rho" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">Pollard&apos;s rho法</h2>
+            <p className="text-sm text-muted-foreground">乱択アルゴリズムによる素因数分解</p>
+          </Link>
+          <Link href="/primitive-root" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">原始根</h2>
+            <p className="text-sm text-muted-foreground">mod pの乗法群の生成元を求める</p>
+          </Link>
+          <Link href="/floor-sum" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">フロアサム (Floor Sum)</h2>
+            <p className="text-sm text-muted-foreground">Σfloor((a*i+b)/m)を高速に計算する</p>
+          </Link>
+          <Link href="/stern-brocot" className="block p-4 border border-border rounded hover:bg-accent transition-colors">
+            <h2 className="font-semibold">Stern-Brocot Tree</h2>
+            <p className="text-sm text-muted-foreground">正有理数を二分探索木で体系的に列挙する</p>
+          </Link>
+        </div>
+
         {/* 数学（線形代数） */}
         <h2 className="text-xl font-bold mt-8 mb-3">数学（線形代数）</h2>
         <div className="space-y-2">
