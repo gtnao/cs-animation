@@ -1097,6 +1097,92 @@ export default function Home() {
             </p>
           </Link>
         </div>
+
+        {/* 探索 */}
+        <h2 className="text-xl font-bold mt-8 mb-3">探索</h2>
+        <div className="space-y-2">
+          <Link
+            href="/binary-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">二分探索</h2>
+            <p className="text-sm text-muted-foreground">
+              ソート済み配列で探索範囲を半分ずつ絞る
+            </p>
+          </Link>
+          <Link
+            href="/ternary-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">三分探索</h2>
+            <p className="text-sm text-muted-foreground">
+              凸関数の極値を区間の三等分で求める
+            </p>
+          </Link>
+          <Link
+            href="/golden-section-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">黄金分割探索</h2>
+            <p className="text-sm text-muted-foreground">
+              黄金比で区間を縮小して凸関数の極値を求める
+            </p>
+          </Link>
+          <Link
+            href="/meet-in-the-middle"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">半分全列挙</h2>
+            <p className="text-sm text-muted-foreground">
+              集合を半分に分割して全列挙の計算量を削減する
+            </p>
+          </Link>
+          <Link
+            href="/pruning-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">枝刈り全探索</h2>
+            <p className="text-sm text-muted-foreground">
+              見込みのない分岐を刈って探索空間を削減する
+            </p>
+          </Link>
+          <Link
+            href="/ida-star"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">IDA*</h2>
+            <p className="text-sm text-muted-foreground">
+              反復深化とA*のヒューリスティックを組み合わせた探索
+            </p>
+          </Link>
+          <Link
+            href="/beam-search"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">ビームサーチ</h2>
+            <p className="text-sm text-muted-foreground">
+              ビーム幅で候補を制限する幅優先的探索
+            </p>
+          </Link>
+          <Link
+            href="/simulated-annealing"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">焼きなまし法</h2>
+            <p className="text-sm text-muted-foreground">
+              温度パラメータで確率的に悪化を許容する最適化手法
+            </p>
+          </Link>
+          <Link
+            href="/genetic-algorithm"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">遺伝的アルゴリズム</h2>
+            <p className="text-sm text-muted-foreground">
+              選択・交叉・突然変異で進化的に解を探索する
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
