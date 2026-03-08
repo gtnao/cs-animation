@@ -157,12 +157,8 @@ export default function PersistentDataStructuresAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">永続データ構造全般</h1>
-        <p className="text-sm text-muted-foreground mb-6">過去のバージョンを保持する永続配列の動作を可視化</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputArr} onChange={(e) => setInputArr(e.target.value)} placeholder="初期配列" className="font-mono max-w-xs" />
           <Input value={inputOps} onChange={(e) => setInputOps(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputOps); }} placeholder="u版:idx=val,q版:idx,..." className="font-mono max-w-sm" />
           <Button onClick={() => run(inputArr, inputOps)} variant="outline">実行</Button>
@@ -219,7 +215,6 @@ export default function PersistentDataStructuresAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

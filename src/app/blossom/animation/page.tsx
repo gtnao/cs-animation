@@ -223,12 +223,8 @@ export default function BlossomAnimationPage() {
   const isBlossom = (n: number) => step.blossomNodes.includes(n);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Edmonds&apos; Blossom</h1>
-        <p className="text-sm text-muted-foreground mb-6">一般グラフの最大マッチングを求める花 (Blossom) 縮約アルゴリズム</p>
-
-        <div className="mb-6 border border-border rounded p-4">
+    <>
+<div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 600 400" className="w-full h-auto">
             {/* Edges */}
             {EDGES.map(([a, b], idx) => {
@@ -320,7 +316,6 @@ export default function BlossomAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

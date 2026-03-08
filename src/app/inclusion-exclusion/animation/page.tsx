@@ -171,14 +171,8 @@ export default function InclusionExclusionAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">包除原理</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          集合の和集合を交互の加減算で計算する過程を可視化
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input
             value={input}
@@ -276,7 +270,6 @@ export default function InclusionExclusionAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

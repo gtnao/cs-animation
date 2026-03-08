@@ -255,14 +255,8 @@ export default function SqrtDecompositionAnimationPage() {
   const blockHighlightSet = new Set(step.highlightBlocks);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">平方分割</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          配列を sqrt(n) 個のブロックに分割して区間クエリを高速化
-        </p>
-
-        <div className="flex gap-2 mb-4">
+    <>
+<div className="flex gap-2 mb-4">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") runBuild(input); }} placeholder="配列を空白区切りで入力" className="font-mono max-w-md" />
           <Button onClick={() => runBuild(input)} variant="outline">構築</Button>
         </div>
@@ -323,7 +317,6 @@ export default function SqrtDecompositionAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

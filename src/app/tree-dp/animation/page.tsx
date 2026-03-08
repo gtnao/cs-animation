@@ -149,12 +149,8 @@ export default function TreeDPAnimationPage() {
   const levels = [[0], [1, 2], [3, 4, 5]];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">木DP</h1>
-        <p className="text-sm text-muted-foreground mb-6">最大重み独立集合を木DPで求める</p>
-
-        <Button onClick={run} variant="outline" className="mb-8">リセット</Button>
+    <>
+<Button onClick={run} variant="outline" className="mb-8">リセット</Button>
 
         {/* Tree visualization */}
         <div className="mb-6">
@@ -219,7 +215,6 @@ export default function TreeDPAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

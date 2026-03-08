@@ -280,14 +280,8 @@ export default function PrimAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Prim法</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          頂点を1つずつMSTに追加していく最小全域木アルゴリズム
-        </p>
-
-        {/* Graph SVG */}
+    <>
+{/* Graph SVG */}
         <div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 600 400" className="w-full h-auto max-h-[400px]">
             {graph.edges.map((e, idx) => {
@@ -423,7 +417,6 @@ export default function PrimAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

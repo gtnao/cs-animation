@@ -229,14 +229,8 @@ export default function FenwickTreeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">BIT / Fenwick Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          累積和の計算と一点加算を O(log n) で行うデータ構造
-        </p>
-
-        <div className="flex gap-2 mb-4">
+    <>
+<div className="flex gap-2 mb-4">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") runBuild(input); }} placeholder="配列を空白区切りで入力" className="font-mono max-w-xs" />
           <Button onClick={() => runBuild(input)} variant="outline">構築</Button>
         </div>
@@ -309,7 +303,6 @@ export default function FenwickTreeAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

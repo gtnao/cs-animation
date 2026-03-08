@@ -294,14 +294,8 @@ export default function MatrixTreeTheoremAnimationPage() {
   );
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">行列木定理 (Kirchhoff)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ラプラシアン行列の余因子で全域木の個数を計算
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div className="flex items-center gap-1">
             <span className="text-sm">頂点数:</span>
@@ -378,7 +372,6 @@ export default function MatrixTreeTheoremAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

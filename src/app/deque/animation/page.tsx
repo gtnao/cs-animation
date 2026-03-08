@@ -263,14 +263,8 @@ export default function DequeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Deque</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          両端から要素の追加・削除ができるデータ構造
-        </p>
-
-        {/* Operation builder */}
+    <>
+{/* Operation builder */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             操作を追加
@@ -509,7 +503,6 @@ export default function DequeAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

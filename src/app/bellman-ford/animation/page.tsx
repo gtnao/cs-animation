@@ -284,14 +284,8 @@ export default function BellmanFordAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Bellman-Ford法</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          負の辺を含むグラフでも最短経路を求められるアルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-8 items-center">
+    <>
+<div className="flex gap-2 mb-8 items-center">
           <span className="text-sm text-muted-foreground">始点:</span>
           <select
             value={startNode}
@@ -530,7 +524,6 @@ export default function BellmanFordAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

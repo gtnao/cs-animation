@@ -230,16 +230,8 @@ export default function ZetaMobiusTransformAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">
-          高速ゼータ変換 / メビウス変換
-        </h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          集合関数に対するゼータ変換とその逆変換
-        </p>
-
-        <div className="flex flex-wrap gap-2 mb-4">
+    <>
+<div className="flex flex-wrap gap-2 mb-4">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -370,7 +362,6 @@ export default function ZetaMobiusTransformAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -202,12 +202,8 @@ export default function MinimumSpanningArborescenceAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">最小全域有向木 (Edmonds&apos; Algorithm)</h1>
-        <p className="text-sm text-muted-foreground mb-6">有向グラフの最小全域有向木を構築</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputN} onChange={(e) => setInputN(e.target.value)} placeholder="頂点数" className="font-mono w-20" />
           <Input value={inputEdges} onChange={(e) => setInputEdges(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputN, inputEdges, inputRoot); }} placeholder="from-to:weight,..." className="font-mono max-w-sm" />
           <Input value={inputRoot} onChange={(e) => setInputRoot(e.target.value)} placeholder="根" className="font-mono w-16" />
@@ -258,7 +254,6 @@ export default function MinimumSpanningArborescenceAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -338,14 +338,8 @@ export default function DynamicSegmentTreeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">動的セグメント木</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          必要なノードだけを動的に生成するセグメント木 (値域: [0, {rangeMax}])
-        </p>
-
-        <div className="flex gap-2 mb-4 flex-wrap">
+    <>
+<div className="flex gap-2 mb-4 flex-wrap">
           <Input value={updatePos} onChange={(e) => setUpdatePos(e.target.value)} placeholder="位置" className="font-mono w-16" />
           <Input value={updateVal} onChange={(e) => setUpdateVal(e.target.value)} placeholder="加算値" className="font-mono w-20" />
           <Button onClick={runUpdate} variant="outline">加算</Button>
@@ -393,7 +387,6 @@ export default function DynamicSegmentTreeAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

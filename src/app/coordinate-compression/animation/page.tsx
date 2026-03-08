@@ -190,14 +190,8 @@ export default function CoordinateCompressionAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">座標圧縮</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          大きな値の集合を相対順序を保ったまま小さい連続整数に変換
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -338,7 +332,6 @@ export default function CoordinateCompressionAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

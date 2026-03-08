@@ -141,12 +141,8 @@ export default function MatroidAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Matroid (マトロイド)</h1>
-        <p className="text-sm text-muted-foreground mb-6">パーティションマトロイド上の貪欲法を可視化</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(input); }} placeholder="id:weight:group,..." className="font-mono max-w-md" />
           <Button onClick={() => run(input)} variant="outline">実行</Button>
         </div>
@@ -199,7 +195,6 @@ export default function MatroidAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

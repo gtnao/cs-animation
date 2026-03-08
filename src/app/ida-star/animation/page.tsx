@@ -328,14 +328,8 @@ export default function IDAStarAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">IDA*</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          反復深化と A* のヒューリスティックを組み合わせた探索アルゴリズム
-        </p>
-
-        {/* Grid */}
+    <>
+{/* Grid */}
         <div className="mb-6">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             グリッド (S=スタート, G=ゴール)
@@ -472,7 +466,6 @@ export default function IDAStarAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -170,14 +170,8 @@ export default function SlidingWindowAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">スライディングウィンドウ</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          固定長ウィンドウをスライドさせて最大和の区間を探索
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={inputArr} onChange={(e) => setInputArr(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputK); }} placeholder="配列 (スペース区切り)" className="font-mono max-w-xs" />
           <Input value={inputK} onChange={(e) => setInputK(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputK); }} placeholder="k" className="font-mono w-20" />
           <Button onClick={() => run(inputArr, inputK)} variant="outline">実行</Button>
@@ -224,7 +218,6 @@ export default function SlidingWindowAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

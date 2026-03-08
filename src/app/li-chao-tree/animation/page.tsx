@@ -244,12 +244,8 @@ export default function LiChaoTreeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Li Chao Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">直線追加と最小値クエリを効率的に処理するセグメント木</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={inputOps} onChange={(e) => setInputOps(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputOps); }} placeholder="a傾き,切片 q位置 ..." className="font-mono max-w-md" />
           <Button onClick={() => run(inputOps)} variant="outline">実行</Button>
         </div>
@@ -306,7 +302,6 @@ export default function LiChaoTreeAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

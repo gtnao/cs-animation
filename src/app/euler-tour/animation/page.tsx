@@ -271,14 +271,8 @@ export default function EulerTourAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Euler Tour</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          木の DFS 走査による Euler Tour の構築過程を可視化
-        </p>
-
-        {/* Tree SVG */}
+    <>
+{/* Tree SVG */}
         <div className="mb-6 overflow-x-auto">
           <svg
             width={svgWidth}
@@ -490,7 +484,6 @@ export default function EulerTourAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

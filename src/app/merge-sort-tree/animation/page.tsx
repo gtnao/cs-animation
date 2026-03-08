@@ -280,14 +280,8 @@ export default function MergeSortTreeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Merge Sort Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          各ノードにソート済み部分列を持つセグメント木
-        </p>
-
-        <div className="flex gap-2 mb-4">
+    <>
+<div className="flex gap-2 mb-4">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") runBuild(input); }} placeholder="配列を空白区切りで入力" className="font-mono max-w-xs" />
           <Button onClick={() => runBuild(input)} variant="outline">構築</Button>
         </div>
@@ -339,7 +333,6 @@ export default function MergeSortTreeAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

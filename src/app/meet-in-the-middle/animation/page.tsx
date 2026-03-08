@@ -320,16 +320,8 @@ export default function MeetInTheMiddleAnimationPage() {
   const maxDisplay = 16;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">
-          半分全列挙 (Meet in the Middle)
-        </h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          集合を二分割して全列挙し、組み合わせることで計算量を削減する手法
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input
             value={numsInput}
@@ -479,7 +471,6 @@ export default function MeetInTheMiddleAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

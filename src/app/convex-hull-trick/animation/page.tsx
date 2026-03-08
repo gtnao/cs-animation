@@ -145,12 +145,8 @@ export default function ConvexHullTrickAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Convex Hull Trick</h1>
-        <p className="text-sm text-muted-foreground mb-6">一次関数群の最小値クエリを凸包で高速処理</p>
-
-        <Button onClick={run} variant="outline" className="mb-8">リセット</Button>
+    <>
+<Button onClick={run} variant="outline" className="mb-8">リセット</Button>
 
         {/* Lines list */}
         <div className="mb-6">
@@ -197,7 +193,6 @@ export default function ConvexHullTrickAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

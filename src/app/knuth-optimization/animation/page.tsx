@@ -145,12 +145,8 @@ export default function KnuthOptimizationAnimationPage() {
   const n = freq.length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Knuth&apos;s Optimization</h1>
-        <p className="text-sm text-muted-foreground mb-6">最適BST構築を区間DPとKnuth最適化で解く</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(); }} placeholder="頻度 (空白区切り)" className="font-mono max-w-xs" />
           <Button onClick={run} variant="outline">実行</Button>
         </div>
@@ -206,7 +202,6 @@ export default function KnuthOptimizationAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

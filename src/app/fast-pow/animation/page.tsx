@@ -179,14 +179,8 @@ export default function FastPowAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">高速べき乗 (繰り返し二乗法)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          べき乗を O(log n) で計算するアルゴリズム
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input
             value={inputBase}
@@ -326,7 +320,6 @@ export default function FastPowAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -283,14 +283,8 @@ export default function BidirectionalBfsAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">双方向BFS</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          始点とゴールの両方から同時にBFSを行い、探索空間を削減するアルゴリズム
-        </p>
-
-        <div className="text-sm text-muted-foreground mb-4">
+    <>
+<div className="text-sm text-muted-foreground mb-4">
           始点: {startNode}　ゴール: {goalNode}
         </div>
 
@@ -465,7 +459,6 @@ export default function BidirectionalBfsAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

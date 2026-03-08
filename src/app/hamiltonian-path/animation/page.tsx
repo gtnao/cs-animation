@@ -271,14 +271,8 @@ export default function HamiltonianPathAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ハミルトン路 DP</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ビットマスク DP で全頂点を1回ずつ通る経路を探索
-        </p>
-
-        <div className="mb-6 border border-border rounded p-4">
+    <>
+<div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 600 400" className="w-full h-auto max-h-[400px]">
             {graph.edges.map(([u, v], idx) => {
               const p1 = positions[u];
@@ -369,7 +363,6 @@ export default function HamiltonianPathAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

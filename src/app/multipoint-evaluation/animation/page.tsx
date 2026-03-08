@@ -227,14 +227,8 @@ export default function MultipointEvaluationAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Multipoint Evaluation</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          多項式を複数の点で同時に評価する過程を可視化
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div className="flex items-center gap-1">
             <span className="text-sm">係数 (a0,a1,...):</span>
@@ -353,7 +347,6 @@ export default function MultipointEvaluationAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

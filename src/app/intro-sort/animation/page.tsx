@@ -289,14 +289,8 @@ export default function IntroSortAnimationPage() {
   const algoLabel = step.algorithm === "quick" ? "Quick Sort" : step.algorithm === "heap" ? "Heap Sort" : step.algorithm === "insertion" ? "Insertion Sort" : "";
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Intro Sort</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          Quick Sort・Heap Sort・Insertion Sort を組み合わせたハイブリッドソートアルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -362,7 +356,6 @@ export default function IntroSortAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -255,14 +255,8 @@ export default function LucasTheoremAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Lucasの定理</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          n, k を p 進展開して各桁の二項係数の積で計算
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div className="flex items-center gap-1">
             <span className="text-sm">n:</span>
@@ -406,7 +400,6 @@ export default function LucasTheoremAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

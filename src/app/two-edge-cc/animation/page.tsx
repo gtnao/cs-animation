@@ -306,14 +306,8 @@ export default function TwoEdgeCCAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">二重辺連結成分分解</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          橋を検出し、橋を除いた連結成分に分解する
-        </p>
-
-        <div className="mb-6 border border-border rounded p-4">
+    <>
+<div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 600 400" className="w-full h-auto max-h-[400px]">
             {graph.edges.map(([u, v], idx) => {
               const p1 = positions[u];
@@ -451,7 +445,6 @@ export default function TwoEdgeCCAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

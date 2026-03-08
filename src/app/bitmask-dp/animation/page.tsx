@@ -166,12 +166,8 @@ export default function BitmaskDPAnimationPage() {
   const INF = 1e9;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ビットDP</h1>
-        <p className="text-sm text-muted-foreground mb-6">巡回セールスマン問題 (TSP) をビットマスクDPで解く</p>
-
-        <div className="flex flex-wrap gap-2 mb-8">
+    <>
+<div className="flex flex-wrap gap-2 mb-8">
           <Input value={nInput} onChange={(e) => setNInput(e.target.value)} placeholder="都市数" className="font-mono w-20" />
           <Input value={distInput} onChange={(e) => setDistInput(e.target.value)} placeholder="距離行列 (カンマ区切り)" className="font-mono max-w-lg" />
           <Button onClick={run} variant="outline">実行</Button>
@@ -241,7 +237,6 @@ export default function BitmaskDPAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -412,14 +412,8 @@ export default function WeightedUnionFindAnimationPage() {
   const nodeMap = new Map(allNodes.map((n) => [n.id, n]));
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">重み付き Union-Find</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          要素間の相対的な重み (差分) を管理できる Union-Find
-        </p>
-
-        {/* Operation builder */}
+    <>
+{/* Operation builder */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             操作を追加 (要素: 0 ~ {nodeCount - 1})
@@ -727,7 +721,6 @@ export default function WeightedUnionFindAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

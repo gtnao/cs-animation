@@ -320,14 +320,8 @@ export default function BlockCutTreeAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Block Cut Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          二重連結成分と関節点からなる木構造
-        </p>
-
-        {/* Graph SVG */}
+    <>
+{/* Graph SVG */}
         <div className="mb-6 flex justify-center">
           <svg
             width={530}
@@ -478,7 +472,6 @@ export default function BlockCutTreeAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

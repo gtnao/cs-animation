@@ -366,14 +366,8 @@ export default function HLDAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Heavy-Light Decomposition</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          木をヘビーチェーンに分解する過程を可視化
-        </p>
-
-        {/* Tree SVG */}
+    <>
+{/* Tree SVG */}
         <div className="mb-6 overflow-x-auto">
           <svg
             width={svgWidth}
@@ -530,7 +524,6 @@ export default function HLDAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

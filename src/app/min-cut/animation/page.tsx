@@ -341,12 +341,8 @@ export default function MinCutAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">最小カット</h1>
-        <p className="text-sm text-muted-foreground mb-6">最大フロー最小カット定理に基づくアルゴリズム</p>
-
-        <div className="mb-6 border border-border rounded p-4">
+    <>
+<div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 580 400" className="w-full h-auto">
             <defs>
               {[
@@ -417,7 +413,6 @@ export default function MinCutAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

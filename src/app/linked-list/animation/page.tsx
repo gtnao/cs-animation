@@ -298,14 +298,8 @@ export default function LinkedListAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Linked List</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ポインタで要素を連結するデータ構造
-        </p>
-
-        {/* Operation builder */}
+    <>
+{/* Operation builder */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             操作を追加
@@ -577,7 +571,6 @@ export default function LinkedListAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -221,14 +221,8 @@ export default function QuickSortAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Quick Sort</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ピボットを基準に分割を繰り返して整列する高速なソートアルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -298,7 +292,6 @@ export default function QuickSortAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

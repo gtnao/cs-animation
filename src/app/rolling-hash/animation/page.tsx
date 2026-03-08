@@ -139,12 +139,8 @@ export default function RollingHashAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Rolling Hash</h1>
-        <p className="text-sm text-muted-foreground mb-6">スライディングウィンドウでハッシュ値を効率的に更新</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={input} onChange={(e) => setInput(e.target.value)} placeholder="文字列" className="font-mono max-w-xs" />
           <Input value={winSizeInput} onChange={(e) => setWinSizeInput(e.target.value)} placeholder="窓サイズ" className="font-mono w-24" />
           <Button onClick={() => run(input, winSizeInput)} variant="outline">実行</Button>
@@ -198,7 +194,6 @@ export default function RollingHashAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

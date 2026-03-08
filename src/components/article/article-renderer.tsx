@@ -28,15 +28,13 @@ export function ArticleRenderer({ content, title }: ArticleRendererProps) {
   }, [content]);
 
   return (
-    <div className="min-h-screen bg-background">
-      <article className="max-w-3xl mx-auto px-4 py-12">
-        {title && <h1 className="text-3xl font-bold mb-8">{title}</h1>}
-        <div
-          ref={articleRef}
-          className="article-content"
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
-      </article>
-    </div>
+    <article>
+      {title && <h1 className="text-3xl font-bold mb-8">{title}</h1>}
+      <div
+        ref={articleRef}
+        className="article-content"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    </article>
   );
 }

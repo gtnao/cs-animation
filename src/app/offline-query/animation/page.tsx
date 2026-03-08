@@ -152,12 +152,8 @@ export default function OfflineQueryAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Offline Query (クエリ先読み)</h1>
-        <p className="text-sm text-muted-foreground mb-6">クエリをソートして効率的に処理する手法を可視化</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputArr} onChange={(e) => setInputArr(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputQueries); }} placeholder="配列" className="font-mono max-w-xs" />
           <Input value={inputQueries} onChange={(e) => setInputQueries(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputQueries); }} placeholder="クエリ (1-3,0-4,...)" className="font-mono max-w-xs" />
           <Button onClick={() => run(inputArr, inputQueries)} variant="outline">実行</Button>
@@ -210,7 +206,6 @@ export default function OfflineQueryAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

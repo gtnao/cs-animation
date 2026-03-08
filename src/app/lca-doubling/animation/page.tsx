@@ -325,14 +325,8 @@ export default function LCADoublingAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">LCA - ダブリング</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ダブリングを用いた最小共通祖先の求め方を可視化 (クエリ: u={DEFAULT_U}, v={DEFAULT_V})
-        </p>
-
-        {/* Tree SVG */}
+    <>
+{/* Tree SVG */}
         <div className="mb-6 overflow-x-auto">
           <svg
             width={svgWidth}
@@ -510,7 +504,6 @@ export default function LCADoublingAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

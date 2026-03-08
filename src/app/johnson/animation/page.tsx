@@ -300,14 +300,8 @@ export default function JohnsonAnimationPage() {
   const n = nodes.length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Johnson&apos;s Algorithm</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          全頂点対間最短経路を効率的に求めるアルゴリズム
-        </p>
-
-        {/* Graph */}
+    <>
+{/* Graph */}
         <div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 500 300" className="w-full max-w-lg mx-auto">
             <defs>
@@ -556,7 +550,6 @@ export default function JohnsonAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

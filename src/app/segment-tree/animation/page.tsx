@@ -289,14 +289,8 @@ export default function SegmentTreeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">セグメント木</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          区間に対するクエリと一点更新を O(log n) で処理するデータ構造
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-4">
           <Input
             value={input}
@@ -451,7 +445,6 @@ export default function SegmentTreeAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

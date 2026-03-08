@@ -207,14 +207,8 @@ export default function RunLengthEncodingAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ランレングス圧縮</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          連続する同一文字をその文字と出現回数のペアに圧縮
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -322,7 +316,6 @@ export default function RunLengthEncodingAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

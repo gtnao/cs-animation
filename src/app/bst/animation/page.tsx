@@ -353,14 +353,8 @@ export default function BSTAnimationPage() {
     : null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">二分探索木 (BST)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          挿入操作をステップごとに可視化
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8">
           <Input
             value={input}
@@ -464,7 +458,6 @@ export default function BSTAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

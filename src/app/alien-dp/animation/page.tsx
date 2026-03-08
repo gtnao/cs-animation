@@ -134,12 +134,8 @@ export default function AlienDPAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Alien DP</h1>
-        <p className="text-sm text-muted-foreground mb-6">ラグランジュ緩和で個数制約を除去する最適化テクニック</p>
-
-        <div className="flex flex-wrap gap-2 mb-8">
+    <>
+<div className="flex flex-wrap gap-2 mb-8">
           <Input value={arrInput} onChange={(e) => setArrInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(); }} placeholder="配列" className="font-mono max-w-xs" />
           <Input value={kInput} onChange={(e) => setKInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(); }} placeholder="K" className="font-mono w-16" />
           <Button onClick={run} variant="outline">実行</Button>
@@ -197,7 +193,6 @@ export default function AlienDPAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

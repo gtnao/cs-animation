@@ -278,14 +278,8 @@ export default function GaussianEliminationAnimationPage() {
   const m = step.matrix[0].length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ガウスの消去法</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          連立一次方程式を前進消去と後退代入で解くアルゴリズム
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div className="flex-1 min-w-[300px]">
             <label className="text-xs text-muted-foreground">
@@ -449,7 +443,6 @@ export default function GaussianEliminationAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

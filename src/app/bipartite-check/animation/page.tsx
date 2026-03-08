@@ -274,14 +274,8 @@ export default function BipartiteCheckAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">二部グラフ判定</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          BFSによる二部グラフ判定アルゴリズム
-        </p>
-
-        {/* Graph SVG */}
+    <>
+{/* Graph SVG */}
         <div className="mb-6 flex justify-center">
           <svg
             width={500}
@@ -440,7 +434,6 @@ export default function BipartiteCheckAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

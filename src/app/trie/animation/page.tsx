@@ -254,12 +254,8 @@ export default function TrieAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Trie</h1>
-        <p className="text-sm text-muted-foreground mb-6">文字列集合を木構造で管理</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={wordsInput} onChange={(e) => setWordsInput(e.target.value)} placeholder="挿入する単語 (カンマ区切り)" className="font-mono max-w-sm" />
           <Input value={searchInput} onChange={(e) => setSearchInput(e.target.value)} placeholder="検索する単語 (カンマ区切り)" className="font-mono max-w-sm" />
           <Button onClick={() => run(wordsInput, searchInput)} variant="outline">実行</Button>
@@ -306,7 +302,6 @@ export default function TrieAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

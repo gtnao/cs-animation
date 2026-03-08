@@ -1,42 +1,15 @@
-import Link from "next/link";
+import { renderMarkdown } from "@/lib/markdown";
+import { ArticleRenderer } from "@/components/article/article-renderer";
 
-export default function OfflineDynamicConnectivityPage() {
+export default async function Page() {
+  const { content, frontmatter } = await renderMarkdown(
+    "offline-dynamic-connectivity/article.md"
+  );
+
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-2xl mx-auto px-4 py-16">
-        <h1 className="text-2xl font-bold mb-2">オフライン削除 (Offline Dynamic Connectivity)</h1>
-        <p className="text-sm text-muted-foreground mb-8">
-          辺の追加・削除を含むクエリ列をオフラインで処理し、各時点の連結性を求める手法
-        </p>
-        <div className="space-y-2">
-          <Link
-            href="/offline-dynamic-connectivity/animation"
-            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
-          >
-            <h2 className="font-semibold">アニメーション</h2>
-            <p className="text-sm text-muted-foreground">
-              ステップ実行でアルゴリズムの動作を可視化
-            </p>
-          </Link>
-          <Link
-            href="/offline-dynamic-connectivity/article"
-            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
-          >
-            <h2 className="font-semibold">解説記事</h2>
-            <p className="text-sm text-muted-foreground">
-              アルゴリズムの原理と正当性を詳しく解説
-            </p>
-          </Link>
-        </div>
-        <div className="mt-8">
-          <Link
-            href="/"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ← トップに戻る
-          </Link>
-        </div>
-      </div>
-    </div>
+    <ArticleRenderer
+      content={content}
+      title={(frontmatter.title as string) || "オフライン削除 (Offline Dynamic Connectivity)"}
+    />
   );
 }

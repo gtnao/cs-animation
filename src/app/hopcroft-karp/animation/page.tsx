@@ -298,12 +298,8 @@ export default function HopcroftKarpAnimationPage() {
     step.highlightEdges.some(([a, b]) => a === l && b === r);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Hopcroft-Karp</h1>
-        <p className="text-sm text-muted-foreground mb-6">二部グラフの最大マッチングを効率的に求めるアルゴリズム</p>
-
-        <div className="mb-6 border border-border rounded p-4">
+    <>
+<div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 540 420" className="w-full h-auto">
             {/* Edges */}
             {EDGES.map((edge, idx) => {
@@ -407,7 +403,6 @@ export default function HopcroftKarpAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

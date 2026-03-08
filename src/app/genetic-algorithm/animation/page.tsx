@@ -290,14 +290,8 @@ export default function GeneticAlgorithmAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">遺伝的アルゴリズム</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          自然選択と遺伝の仕組みを模倣して最適解を探索 (OneMax 問題: 全て 1 にする)
-        </p>
-
-        {/* Population */}
+    <>
+{/* Population */}
         <div className="mb-6">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             集団 (個体数 {POP_SIZE}, 遺伝子長 {GENE_LENGTH})
@@ -501,7 +495,6 @@ export default function GeneticAlgorithmAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

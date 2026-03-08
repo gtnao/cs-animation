@@ -297,14 +297,8 @@ export default function BoruvkaAnimationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Borůvka法</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          各連結成分から最小重み辺を同時に選ぶ最小全域木アルゴリズム
-        </p>
-
-        {/* Graph SVG */}
+    <>
+{/* Graph SVG */}
         <div className="mb-6 border border-border rounded p-4">
           <svg viewBox="0 0 600 400" className="w-full h-auto max-h-[400px]">
             {graph.edges.map((e, idx) => {
@@ -447,7 +441,6 @@ export default function BoruvkaAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

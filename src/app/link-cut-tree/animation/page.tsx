@@ -316,14 +316,8 @@ export default function LinkCutTreeAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Link-Cut Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          動的な森上の操作 (link, cut, access, find_root) を可視化
-        </p>
-
-        {/* Operation */}
+    <>
+{/* Operation */}
         {step.operation && (
           <div className="mb-4">
             <span className="text-sm font-mono bg-gray-100 px-2 py-1 rounded border border-gray-200">
@@ -460,7 +454,6 @@ export default function LinkCutTreeAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

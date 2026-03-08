@@ -180,14 +180,8 @@ export default function FloorSumAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">フロアサム (Floor Sum)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          床関数の和を高速に計算する
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputN} onChange={(e) => setInputN(e.target.value)} placeholder="n" className="font-mono max-w-[80px]" />
           <Input value={inputA} onChange={(e) => setInputA(e.target.value)} placeholder="a" className="font-mono max-w-[80px]" />
@@ -292,7 +286,6 @@ export default function FloorSumAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

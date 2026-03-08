@@ -263,14 +263,8 @@ export default function FenwickTree2DAnimationPage() {
   const highlightSet = new Set(step.highlightCells.map(([r, c]) => `${r},${c}`));
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">2次元BIT</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          2次元の累積和クエリと一点加算を処理するデータ構造
-        </p>
-
-        <div className="flex gap-2 mb-4">
+    <>
+<div className="flex gap-2 mb-4">
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -353,7 +347,6 @@ export default function FenwickTree2DAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

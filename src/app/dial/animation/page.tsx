@@ -277,14 +277,8 @@ export default function DialAnimationPage() {
   );
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Dial&apos;s Algorithm</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          バケットキューを用いた整数重みグラフの最短経路アルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-8 items-center">
+    <>
+<div className="flex gap-2 mb-8 items-center">
           <span className="text-sm text-muted-foreground">始点:</span>
           <select
             value={startNode}
@@ -522,7 +516,6 @@ export default function DialAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

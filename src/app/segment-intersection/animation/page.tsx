@@ -253,14 +253,8 @@ export default function SegmentIntersectionAnimationPage() {
   const seg2Color = isResult ? (step.type === "result_intersect" ? "#10b981" : "#ef4444") : "#f59e0b";
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">線分交差判定</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          外積を用いた線分交差判定アルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -320,7 +314,6 @@ export default function SegmentIntersectionAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

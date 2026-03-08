@@ -364,14 +364,8 @@ export default function TwoSatAnimationPage() {
   const arrowSize = 8;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">2-SAT</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          含意グラフとSCCによる充足可能性判定
-        </p>
-
-        {/* Clauses */}
+    <>
+{/* Clauses */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             節
@@ -561,7 +555,6 @@ export default function TwoSatAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

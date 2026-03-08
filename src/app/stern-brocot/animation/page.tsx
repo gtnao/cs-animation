@@ -179,14 +179,8 @@ export default function SternBrocotAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Stern-Brocot Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          全ての正の有理数を既約分数として整列する二分木
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 items-center">
           <Input value={inputP} onChange={(e) => setInputP(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputP, inputQ); }} placeholder="分子" className="font-mono max-w-[80px]" />
           <span className="text-muted-foreground">/</span>
@@ -297,7 +291,6 @@ export default function SternBrocotAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

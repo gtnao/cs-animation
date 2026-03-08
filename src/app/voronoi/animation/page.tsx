@@ -158,12 +158,8 @@ export default function VoronoiAnimationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ボロノイ図</h1>
-        <p className="text-sm text-muted-foreground mb-6">各母点に最も近い領域で空間を分割</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(input); }} placeholder="x,y;x,y;..." className="font-mono max-w-md" />
           <Button onClick={() => run(input)} variant="outline">実行</Button>
         </div>
@@ -207,7 +203,6 @@ export default function VoronoiAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

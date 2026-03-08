@@ -173,12 +173,8 @@ export default function MonotoneQueueAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Monotone Queue (Sliding Window Minimum)</h1>
-        <p className="text-sm text-muted-foreground mb-6">単調デックでスライディングウィンドウ最小値を効率的に計算</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={inputArr} onChange={(e) => setInputArr(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputK); }} placeholder="配列" className="font-mono max-w-xs" />
           <Input value={inputK} onChange={(e) => setInputK(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputArr, inputK); }} placeholder="k" className="font-mono w-20" />
           <Button onClick={() => run(inputArr, inputK)} variant="outline">実行</Button>
@@ -236,7 +232,6 @@ export default function MonotoneQueueAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

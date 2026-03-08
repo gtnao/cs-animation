@@ -291,12 +291,8 @@ export default function GomoryHuAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Gomory-Hu Tree</h1>
-        <p className="text-sm text-muted-foreground mb-6">全頂点対の最小カットを1本の木で表現するデータ構造</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           {/* Original graph */}
           <div className="border border-border rounded p-4">
             <div className="text-xs font-medium text-muted-foreground mb-2">元のグラフ</div>
@@ -383,7 +379,6 @@ export default function GomoryHuAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

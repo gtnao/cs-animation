@@ -195,12 +195,8 @@ export default function OfflineDynamicConnectivityAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">オフライン削除 (Offline Dynamic Connectivity)</h1>
-        <p className="text-sm text-muted-foreground mb-6">辺の追加・削除をオフラインで処理し連結性を判定</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputN} onChange={(e) => setInputN(e.target.value)} placeholder="頂点数" className="font-mono w-24" />
           <Input value={inputEvents} onChange={(e) => setInputEvents(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputN, inputEvents); }} placeholder="a0-1,r0-1,q0-2,..." className="font-mono max-w-sm" />
           <Button onClick={() => run(inputN, inputEvents)} variant="outline">実行</Button>
@@ -258,7 +254,6 @@ export default function OfflineDynamicConnectivityAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

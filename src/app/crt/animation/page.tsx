@@ -171,14 +171,8 @@ export default function CRTAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">中国剰余定理 (CRT)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          連立合同式を統合して解を求める
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-2">
           <Input
             value={inputEqs}
@@ -288,7 +282,6 @@ export default function CRTAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

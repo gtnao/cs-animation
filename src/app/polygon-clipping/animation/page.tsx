@@ -199,12 +199,8 @@ export default function PolygonClippingAnimationPage() {
   const lB = toSvg({ x: step.lineP1.x + dir.x * 10, y: step.lineP1.y + dir.y * 10 });
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">凸多角形の切断</h1>
-        <p className="text-sm text-muted-foreground mb-6">凸多角形を直線で切断する</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(input); }} placeholder="多角形|切断線 (x,y;...|x,y;x,y)" className="font-mono max-w-md" />
           <Button onClick={() => run(input)} variant="outline">実行</Button>
         </div>
@@ -266,7 +262,6 @@ export default function PolygonClippingAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

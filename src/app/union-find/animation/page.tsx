@@ -354,14 +354,8 @@ export default function UnionFindAnimationPage() {
   const nodeMap = new Map(allNodes.map((n) => [n.id, n]));
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Union-Find</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          素集合を効率的に管理するデータ構造 (経路圧縮 + rank による union)
-        </p>
-
-        {/* Operation builder */}
+    <>
+{/* Operation builder */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             操作を追加 (要素: 0 ~ {nodeCount - 1})
@@ -647,7 +641,6 @@ export default function UnionFindAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

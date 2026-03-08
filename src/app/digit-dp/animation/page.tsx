@@ -148,12 +148,8 @@ export default function DigitDPAnimationPage() {
   const n = digits.length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">桁DP</h1>
-        <p className="text-sm text-muted-foreground mb-6">1〜Nで桁和がKの倍数である数の個数を求める</p>
-
-        <div className="flex flex-wrap gap-2 mb-8">
+    <>
+<div className="flex flex-wrap gap-2 mb-8">
           <Input value={inputN} onChange={(e) => setInputN(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(); }} placeholder="N (上限)" className="font-mono w-32" />
           <Input value={inputK} onChange={(e) => setInputK(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(); }} placeholder="K (除数)" className="font-mono w-20" />
           <Button onClick={run} variant="outline">実行</Button>
@@ -243,7 +239,6 @@ export default function DigitDPAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

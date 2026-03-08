@@ -275,14 +275,8 @@ export default function KaratsubaAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Karatsuba法</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          多項式・大整数の乗算を O(n^1.585) で行う分割統治アルゴリズム
-        </p>
-
-        <div className="flex flex-wrap gap-2 mb-8">
+    <>
+<div className="flex flex-wrap gap-2 mb-8">
           <Input
             value={inputA}
             onChange={(e) => setInputA(e.target.value)}
@@ -449,7 +443,6 @@ export default function KaratsubaAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

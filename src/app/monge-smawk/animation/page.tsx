@@ -165,12 +165,8 @@ export default function MongeSMAWKAnimationPage() {
   const m = step.matrix[0].length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Monge性とSMAWK</h1>
-        <p className="text-sm text-muted-foreground mb-6">Monge行列の行最小値を線形時間で求める</p>
-
-        <Button onClick={run} variant="outline" className="mb-8">リセット</Button>
+    <>
+<Button onClick={run} variant="outline" className="mb-8">リセット</Button>
 
         {/* Matrix */}
         <div className="mb-6 overflow-x-auto">
@@ -228,7 +224,6 @@ export default function MongeSMAWKAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

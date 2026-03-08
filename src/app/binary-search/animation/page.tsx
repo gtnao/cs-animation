@@ -235,14 +235,8 @@ export default function BinarySearchAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">二分探索</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ソート済み配列から目標値を O(log n) で探索するアルゴリズム
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input
             value={arrayInput}
@@ -391,7 +385,6 @@ export default function BinarySearchAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

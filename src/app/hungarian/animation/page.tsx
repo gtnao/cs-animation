@@ -324,12 +324,8 @@ export default function HungarianAnimationPage() {
     step.highlightCells.some(([a, b]) => a === i && b === j);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">ハンガリアン法</h1>
-        <p className="text-sm text-muted-foreground mb-6">二部グラフの最小重み完全マッチングを求めるアルゴリズム</p>
-
-        {/* Cost matrix */}
+    <>
+{/* Cost matrix */}
         <div className="mb-4">
           <div className="text-xs font-medium text-muted-foreground mb-2">元のコスト行列</div>
           <div className="overflow-x-auto">
@@ -426,7 +422,6 @@ export default function HungarianAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

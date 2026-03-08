@@ -318,14 +318,8 @@ export default function SccKosarajuAnimationPage() {
   const showReverse = step.phase === 2;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">強連結成分分解 (Kosaraju)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          2回のDFSで有向グラフの強連結成分を求めるアルゴリズム
-        </p>
-
-        {/* Graph SVG */}
+    <>
+{/* Graph SVG */}
         <div className="mb-6 border border-border rounded p-4">
           <div className="text-xs text-muted-foreground mb-2">
             {showReverse ? "転置グラフ (逆辺)" : "元グラフ"}
@@ -480,7 +474,6 @@ export default function SccKosarajuAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

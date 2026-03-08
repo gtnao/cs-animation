@@ -240,14 +240,8 @@ export default function LinearBasisAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">線形基底 Linear Basis / XOR Basis</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          XOR 演算における線形基底の構築と操作
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div className="flex-1 min-w-[200px]">
             <label className="text-xs text-muted-foreground">
@@ -419,7 +413,6 @@ export default function LinearBasisAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

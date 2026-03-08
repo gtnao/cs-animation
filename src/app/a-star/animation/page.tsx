@@ -296,14 +296,8 @@ export default function AStarAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">A*探索</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          ヒューリスティック関数を用いて最短経路を効率的に探索するアルゴリズム
-        </p>
-
-        <div className="text-sm text-muted-foreground mb-4">
+    <>
+<div className="text-sm text-muted-foreground mb-4">
           始点: ({START[0]}, {START[1]})　ゴール: ({GOAL[0]}, {GOAL[1]})
           　ヒューリスティック: マンハッタン距離
         </div>
@@ -435,7 +429,6 @@ export default function AStarAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

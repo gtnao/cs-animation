@@ -221,14 +221,8 @@ export default function MillerRabinAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Miller-Rabin 素数判定</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          確率的に高速な素数判定アルゴリズム
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8">
           <Input
             value={input}
@@ -364,7 +358,6 @@ export default function MillerRabinAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

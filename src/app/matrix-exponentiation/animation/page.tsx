@@ -223,14 +223,8 @@ export default function MatrixExponentiationAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">行列累乗</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          繰り返し二乗法による行列のべき乗の高速計算
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <div>
             <label className="text-xs text-muted-foreground">正方行列 A (行はセミコロン区切り)</label>
@@ -417,7 +411,6 @@ export default function MatrixExponentiationAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

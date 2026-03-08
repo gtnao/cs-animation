@@ -140,12 +140,8 @@ export default function SmallToLargeAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">マージテク (Small to Large)</h1>
-        <p className="text-sm text-muted-foreground mb-6">小さい集合を大きい集合にマージして計算量を削減</p>
-
-        <div className="flex gap-2 mb-8 flex-wrap">
+    <>
+<div className="flex gap-2 mb-8 flex-wrap">
           <Input value={inputSets} onChange={(e) => setInputSets(e.target.value)} placeholder="集合 {1,2},{3},..." className="font-mono max-w-xs" />
           <Input value={inputOps} onChange={(e) => setInputOps(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(inputSets, inputOps); }} placeholder="マージ操作 0-1,2-3,..." className="font-mono max-w-xs" />
           <Button onClick={() => run(inputSets, inputOps)} variant="outline">実行</Button>
@@ -194,7 +190,6 @@ export default function SmallToLargeAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

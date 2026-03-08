@@ -259,14 +259,8 @@ export default function MosAlgorithmAnimationPage() {
   const highlightSet = new Set(step.highlightIndices);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Mo&apos;s Algorithm</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          オフラインの区間クエリを平方分割で効率的に処理するアルゴリズム
-        </p>
-
-        <div className="flex gap-2 mb-4">
+    <>
+<div className="flex gap-2 mb-4">
           <Input value={arrInput} onChange={(e) => setArrInput(e.target.value)} placeholder="配列を空白区切りで" className="font-mono max-w-xs" />
         </div>
         <div className="flex gap-2 mb-4">
@@ -338,7 +332,6 @@ export default function MosAlgorithmAnimationPage() {
         </div>
 
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

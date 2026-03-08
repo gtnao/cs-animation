@@ -148,12 +148,8 @@ export default function LyndonAnimationPage() {
   const colors = ["bg-blue-100 border-blue-400", "bg-emerald-100 border-emerald-500", "bg-amber-50 border-amber-400", "bg-red-100 border-red-500", "bg-purple-100 border-purple-400"];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Lyndon Factorization</h1>
-        <p className="text-sm text-muted-foreground mb-6">文字列をLyndon語の非増加列に分解</p>
-
-        <div className="flex gap-2 mb-8">
+    <>
+<div className="flex gap-2 mb-8">
           <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") run(input); }} placeholder="文字列を入力" className="font-mono max-w-xs" />
           <Button onClick={() => run(input)} variant="outline">実行</Button>
         </div>
@@ -236,7 +232,6 @@ export default function LyndonAnimationPage() {
           <Button variant="outline" size="sm" onClick={() => { setCurrentStep(0); setIsPlaying(false); }}>リセット</Button>
         </div>
         <p className="text-xs text-muted-foreground mt-4">← → キーでステップ移動、スペースキーで再生/停止</p>
-      </div>
-    </div>
+    </>
   );
 }

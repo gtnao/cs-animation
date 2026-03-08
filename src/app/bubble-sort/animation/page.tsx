@@ -191,14 +191,8 @@ export default function BubbleSortAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">Bubble Sort</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          隣接する要素を比較・交換して整列するシンプルなソートアルゴリズム
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8">
           <Input
             value={input}
@@ -306,7 +300,6 @@ export default function BubbleSortAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

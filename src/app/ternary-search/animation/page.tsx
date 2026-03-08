@@ -283,14 +283,8 @@ export default function TernarySearchAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">三分探索</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          凸関数の極値を O(log n) で求めるアルゴリズム
-        </p>
-
-        {/* Graph */}
+    <>
+{/* Graph */}
         <div className="mb-6">
           <div className="text-xs font-medium text-muted-foreground mb-2">
             {FUNC_LABEL}
@@ -395,7 +389,6 @@ export default function TernarySearchAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }

@@ -209,14 +209,8 @@ export default function EditDistanceAnimationPage() {
   if (!step) return null;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-1">編集距離 (Levenshtein)</h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          2つの文字列間の挿入・削除・置換の最小操作回数を求める動的計画法
-        </p>
-
-        {/* Input */}
+    <>
+{/* Input */}
         <div className="flex gap-2 mb-8 flex-wrap">
           <Input
             value={input1}
@@ -361,7 +355,6 @@ export default function EditDistanceAnimationPage() {
         <p className="text-xs text-muted-foreground mt-4">
           ← → キーでステップ移動、スペースキーで再生/停止
         </p>
-      </div>
-    </div>
+    </>
   );
 }
