@@ -1,0 +1,1130 @@
+algorithms:
+  # ── 文字列 ──
+  - name: Z-Algorithm
+    slug: z-algorithm
+    category: string
+    status: done
+
+  - name: KMP法
+    slug: kmp
+    category: string
+    status: todo
+
+  - name: Aho-Corasick法
+    slug: aho-corasick
+    category: string
+    status: todo
+
+  - name: Suffix Array
+    slug: suffix-array
+    category: string
+    status: todo
+
+  - name: Suffix Array (SA-IS)
+    slug: sa-is
+    category: string
+    status: todo
+
+  - name: LCP Array (Kasai's Algorithm)
+    slug: lcp-array
+    category: string
+    status: todo
+
+  - name: Suffix Tree
+    slug: suffix-tree
+    category: string
+    status: todo
+
+  - name: Suffix Automaton
+    slug: suffix-automaton
+    category: string
+    status: todo
+
+  - name: Rolling Hash
+    slug: rolling-hash
+    category: string
+    status: todo
+
+  - name: Rabin-Karp法
+    slug: rabin-karp
+    category: string
+    status: todo
+
+  - name: Manacher's Algorithm
+    slug: manacher
+    category: string
+    status: todo
+
+  - name: Trie
+    slug: trie
+    category: string
+    status: todo
+
+  - name: Palindromic Tree (Eertree)
+    slug: palindromic-tree
+    category: string
+    status: todo
+
+  - name: Burrows-Wheeler Transform
+    slug: bwt
+    category: string
+    status: todo
+
+  - name: Run Length Encoding
+    slug: rle
+    category: string
+    status: todo
+
+  - name: Lyndon Factorization (Duval's Algorithm)
+    slug: lyndon
+    category: string
+    status: todo
+
+  - name: Minimum Rotation (Booth's Algorithm)
+    slug: booth
+    category: string
+    status: todo
+
+  # ── ソート ──
+  - name: Bubble Sort
+    slug: bubble-sort
+    category: sorting
+    status: todo
+
+  - name: Selection Sort
+    slug: selection-sort
+    category: sorting
+    status: todo
+
+  - name: Insertion Sort
+    slug: insertion-sort
+    category: sorting
+    status: todo
+
+  - name: Merge Sort
+    slug: merge-sort
+    category: sorting
+    status: todo
+
+  - name: Quick Sort
+    slug: quick-sort
+    category: sorting
+    status: todo
+
+  - name: Heap Sort
+    slug: heap-sort
+    category: sorting
+    status: todo
+
+  - name: Counting Sort
+    slug: counting-sort
+    category: sorting
+    status: todo
+
+  - name: Radix Sort
+    slug: radix-sort
+    category: sorting
+    status: todo
+
+  - name: Bucket Sort
+    slug: bucket-sort
+    category: sorting
+    status: todo
+
+  - name: Shell Sort
+    slug: shell-sort
+    category: sorting
+    status: todo
+
+  - name: Tim Sort
+    slug: tim-sort
+    category: sorting
+    status: todo
+
+  - name: Intro Sort
+    slug: intro-sort
+    category: sorting
+    status: todo
+
+  - name: Bitonic Sort
+    slug: bitonic-sort
+    category: sorting
+    status: todo
+
+  - name: Pancake Sort
+    slug: pancake-sort
+    category: sorting
+    status: todo
+
+  - name: Cycle Sort
+    slug: cycle-sort
+    category: sorting
+    status: todo
+
+  # ── グラフ（探索・最短路） ──
+  - name: BFS
+    slug: bfs
+    category: graph
+    status: todo
+
+  - name: DFS
+    slug: dfs
+    category: graph
+    status: todo
+
+  - name: Dijkstra法
+    slug: dijkstra
+    category: graph
+    status: todo
+
+  - name: Bellman-Ford法
+    slug: bellman-ford
+    category: graph
+    status: todo
+
+  - name: Warshall-Floyd法
+    slug: warshall-floyd
+    category: graph
+    status: todo
+
+  - name: SPFA
+    slug: spfa
+    category: graph
+    status: todo
+
+  - name: Johnson's Algorithm
+    slug: johnson
+    category: graph
+    status: todo
+
+  - name: A*探索
+    slug: a-star
+    category: graph
+    status: todo
+
+  - name: 双方向BFS
+    slug: bidirectional-bfs
+    category: graph
+    status: todo
+
+  - name: 0-1 BFS
+    slug: 01-bfs
+    category: graph
+    status: todo
+
+  - name: Dial's Algorithm
+    slug: dial
+    category: graph
+    status: todo
+
+  # ── グラフ（木） ──
+  - name: Kruskal法
+    slug: kruskal
+    category: graph-tree
+    status: todo
+
+  - name: Prim法
+    slug: prim
+    category: graph-tree
+    status: todo
+
+  - name: Borůvka法
+    slug: boruvka
+    category: graph-tree
+    status: todo
+
+  - name: トポロジカルソート
+    slug: topological-sort
+    category: graph-tree
+    status: todo
+
+  - name: 強連結成分分解 (Tarjan)
+    slug: scc-tarjan
+    category: graph-tree
+    status: todo
+
+  - name: 強連結成分分解 (Kosaraju)
+    slug: scc-kosaraju
+    category: graph-tree
+    status: todo
+
+  - name: 二重辺連結成分分解
+    slug: two-edge-cc
+    category: graph-tree
+    status: todo
+
+  - name: 二重頂点連結成分分解
+    slug: biconnected-components
+    category: graph-tree
+    status: todo
+
+  - name: 橋・関節点検出
+    slug: bridges-articulation
+    category: graph-tree
+    status: todo
+
+  - name: オイラー路・オイラー閉路
+    slug: euler-path
+    category: graph-tree
+    status: todo
+
+  - name: ハミルトン路 (DP)
+    slug: hamiltonian-path
+    category: graph-tree
+    status: todo
+
+  # ── グラフ（マッチング・フロー） ──
+  - name: 最大フロー (Ford-Fulkerson)
+    slug: ford-fulkerson
+    category: graph-flow
+    status: todo
+
+  - name: 最大フロー (Dinic)
+    slug: dinic
+    category: graph-flow
+    status: todo
+
+  - name: 最大フロー (Push-Relabel)
+    slug: push-relabel
+    category: graph-flow
+    status: todo
+
+  - name: 最小費用流 (Primal-Dual)
+    slug: min-cost-flow
+    category: graph-flow
+    status: todo
+
+  - name: 二部マッチング (Hopcroft-Karp)
+    slug: hopcroft-karp
+    category: graph-flow
+    status: todo
+
+  - name: 二部マッチング (Hungarian)
+    slug: hungarian
+    category: graph-flow
+    status: todo
+
+  - name: 一般マッチング (Edmonds' Blossom)
+    slug: blossom
+    category: graph-flow
+    status: todo
+
+  - name: 最小カット
+    slug: min-cut
+    category: graph-flow
+    status: todo
+
+  - name: Gomory-Hu Tree
+    slug: gomory-hu
+    category: graph-flow
+    status: todo
+
+  # ── グラフ（その他） ──
+  - name: 二部グラフ判定
+    slug: bipartite-check
+    category: graph-misc
+    status: todo
+
+  - name: サイクル検出
+    slug: cycle-detection
+    category: graph-misc
+    status: todo
+
+  - name: グラフ彩色
+    slug: graph-coloring
+    category: graph-misc
+    status: todo
+
+  - name: 2-SAT
+    slug: two-sat
+    category: graph-misc
+    status: todo
+
+  - name: 木の直径
+    slug: tree-diameter
+    category: graph-misc
+    status: todo
+
+  - name: 木の重心
+    slug: tree-centroid
+    category: graph-misc
+    status: todo
+
+  - name: 重心分解 (Centroid Decomposition)
+    slug: centroid-decomposition
+    category: graph-misc
+    status: todo
+
+  - name: Auxiliary Tree (Virtual Tree)
+    slug: auxiliary-tree
+    category: graph-misc
+    status: todo
+
+  - name: Block Cut Tree
+    slug: block-cut-tree
+    category: graph-misc
+    status: todo
+
+  - name: 木の同型判定
+    slug: tree-isomorphism
+    category: graph-misc
+    status: todo
+
+  - name: Prüfer Sequence
+    slug: prufer-sequence
+    category: graph-misc
+    status: todo
+
+  # ── データ構造（基本） ──
+  - name: Stack
+    slug: stack
+    category: data-structure
+    status: todo
+
+  - name: Queue
+    slug: queue
+    category: data-structure
+    status: todo
+
+  - name: Deque
+    slug: deque
+    category: data-structure
+    status: todo
+
+  - name: Priority Queue (Binary Heap)
+    slug: binary-heap
+    category: data-structure
+    status: todo
+
+  - name: Linked List
+    slug: linked-list
+    category: data-structure
+    status: todo
+
+  - name: Hash Table
+    slug: hash-table
+    category: data-structure
+    status: todo
+
+  - name: Union-Find
+    slug: union-find
+    category: data-structure
+    status: todo
+
+  - name: 重み付き Union-Find
+    slug: weighted-union-find
+    category: data-structure
+    status: todo
+
+  # ── データ構造（平衡二分探索木） ──
+  - name: 二分探索木 (BST)
+    slug: bst
+    category: data-structure-tree
+    status: todo
+
+  - name: AVL木
+    slug: avl-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: 赤黒木
+    slug: red-black-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: Splay木
+    slug: splay-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: Treap
+    slug: treap
+    category: data-structure-tree
+    status: todo
+
+  - name: Scapegoat木
+    slug: scapegoat-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: B木
+    slug: b-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: B+木
+    slug: b-plus-tree
+    category: data-structure-tree
+    status: todo
+
+  - name: Skip List
+    slug: skip-list
+    category: data-structure-tree
+    status: todo
+
+  # ── データ構造（区間・列） ──
+  - name: セグメント木
+    slug: segment-tree
+    category: data-structure-range
+    status: todo
+
+  - name: 遅延評価セグメント木
+    slug: lazy-segment-tree
+    category: data-structure-range
+    status: todo
+
+  - name: 永続セグメント木
+    slug: persistent-segment-tree
+    category: data-structure-range
+    status: todo
+
+  - name: 動的セグメント木
+    slug: dynamic-segment-tree
+    category: data-structure-range
+    status: todo
+
+  - name: Merge Sort Tree
+    slug: merge-sort-tree
+    category: data-structure-range
+    status: todo
+
+  - name: BIT (Fenwick Tree)
+    slug: fenwick-tree
+    category: data-structure-range
+    status: todo
+
+  - name: 2次元BIT
+    slug: fenwick-tree-2d
+    category: data-structure-range
+    status: todo
+
+  - name: 平方分割 (Sqrt Decomposition)
+    slug: sqrt-decomposition
+    category: data-structure-range
+    status: todo
+
+  - name: Mo's Algorithm
+    slug: mos-algorithm
+    category: data-structure-range
+    status: todo
+
+  - name: Sparse Table
+    slug: sparse-table
+    category: data-structure-range
+    status: todo
+
+  - name: Disjoint Sparse Table
+    slug: disjoint-sparse-table
+    category: data-structure-range
+    status: todo
+
+  - name: Wavelet Tree
+    slug: wavelet-tree
+    category: data-structure-range
+    status: todo
+
+  # ── データ構造（木クエリ） ──
+  - name: 最小共通祖先 (LCA) - ダブリング
+    slug: lca-doubling
+    category: data-structure-tree-query
+    status: todo
+
+  - name: 最小共通祖先 (LCA) - Euler Tour + Sparse Table
+    slug: lca-euler-tour
+    category: data-structure-tree-query
+    status: todo
+
+  - name: Heavy-Light Decomposition
+    slug: hld
+    category: data-structure-tree-query
+    status: todo
+
+  - name: Euler Tour
+    slug: euler-tour
+    category: data-structure-tree-query
+    status: todo
+
+  - name: Link-Cut Tree
+    slug: link-cut-tree
+    category: data-structure-tree-query
+    status: todo
+
+  - name: 木上のパスクエリ
+    slug: tree-path-query
+    category: data-structure-tree-query
+    status: todo
+
+  # ── データ構造（その他） ──
+  - name: Fibonacci Heap
+    slug: fibonacci-heap
+    category: data-structure-advanced
+    status: todo
+
+  - name: Leftist Heap (Mergeable Heap)
+    slug: leftist-heap
+    category: data-structure-advanced
+    status: todo
+
+  - name: Pairing Heap
+    slug: pairing-heap
+    category: data-structure-advanced
+    status: todo
+
+  - name: Skew Heap
+    slug: skew-heap
+    category: data-structure-advanced
+    status: todo
+
+  - name: Interval Tree
+    slug: interval-tree
+    category: data-structure-advanced
+    status: todo
+
+  - name: k-d Tree
+    slug: kd-tree
+    category: data-structure-advanced
+    status: todo
+
+  - name: Bloom Filter
+    slug: bloom-filter
+    category: data-structure-advanced
+    status: todo
+
+  - name: Count-Min Sketch
+    slug: count-min-sketch
+    category: data-structure-advanced
+    status: todo
+
+  - name: Persistent Array
+    slug: persistent-array
+    category: data-structure-advanced
+    status: todo
+
+  - name: Rope
+    slug: rope
+    category: data-structure-advanced
+    status: todo
+
+  # ── 動的計画法 ──
+  - name: ナップサック問題 (0-1)
+    slug: knapsack-01
+    category: dp
+    status: todo
+
+  - name: ナップサック問題 (個数無制限)
+    slug: knapsack-unbounded
+    category: dp
+    status: todo
+
+  - name: 最長共通部分列 (LCS)
+    slug: lcs
+    category: dp
+    status: todo
+
+  - name: 最長増加部分列 (LIS)
+    slug: lis
+    category: dp
+    status: todo
+
+  - name: 編集距離 (Levenshtein)
+    slug: edit-distance
+    category: dp
+    status: todo
+
+  - name: 桁DP
+    slug: digit-dp
+    category: dp
+    status: todo
+
+  - name: ビットDP (巡回セールスマン等)
+    slug: bitmask-dp
+    category: dp
+    status: todo
+
+  - name: 区間DP
+    slug: interval-dp
+    category: dp
+    status: todo
+
+  - name: 木DP
+    slug: tree-dp
+    category: dp
+    status: todo
+
+  - name: 全方位木DP (Rerooting)
+    slug: rerooting-dp
+    category: dp
+    status: todo
+
+  - name: SOS DP (Sum over Subsets)
+    slug: sos-dp
+    category: dp
+    status: todo
+
+  - name: 行列累乗 DP
+    slug: matrix-exponentiation-dp
+    category: dp
+    status: todo
+
+  - name: Convex Hull Trick
+    slug: convex-hull-trick
+    category: dp
+    status: todo
+
+  - name: Divide & Conquer Optimization
+    slug: dnc-optimization
+    category: dp
+    status: todo
+
+  - name: Knuth's Optimization
+    slug: knuth-optimization
+    category: dp
+    status: todo
+
+  - name: LARSCH Algorithm
+    slug: larsch
+    category: dp
+    status: todo
+
+  - name: Alien DP (Lagrangian Relaxation)
+    slug: alien-dp
+    category: dp
+    status: todo
+
+  - name: 連結性DP (Profile DP / Broken Profile)
+    slug: profile-dp
+    category: dp
+    status: todo
+
+  - name: Monge性とSMWAK
+    slug: monge-smawk
+    category: dp
+    status: todo
+
+  # ── 探索 ──
+  - name: 二分探索
+    slug: binary-search
+    category: search
+    status: todo
+
+  - name: 三分探索
+    slug: ternary-search
+    category: search
+    status: todo
+
+  - name: 黄金分割探索
+    slug: golden-section-search
+    category: search
+    status: todo
+
+  - name: 半分全列挙 (Meet in the Middle)
+    slug: meet-in-the-middle
+    category: search
+    status: todo
+
+  - name: 枝刈り全探索
+    slug: pruning-search
+    category: search
+    status: todo
+
+  - name: IDA*
+    slug: ida-star
+    category: search
+    status: todo
+
+  - name: ビームサーチ
+    slug: beam-search
+    category: search
+    status: todo
+
+  - name: 焼きなまし法
+    slug: simulated-annealing
+    category: search
+    status: todo
+
+  - name: 遺伝的アルゴリズム
+    slug: genetic-algorithm
+    category: search
+    status: todo
+
+  # ── 数学（整数論） ──
+  - name: ユークリッドの互除法
+    slug: gcd
+    category: math-number-theory
+    status: todo
+
+  - name: 拡張ユークリッドの互除法
+    slug: ext-gcd
+    category: math-number-theory
+    status: todo
+
+  - name: 中国剰余定理 (CRT)
+    slug: crt
+    category: math-number-theory
+    status: todo
+
+  - name: エラトステネスの篩
+    slug: sieve-of-eratosthenes
+    category: math-number-theory
+    status: todo
+
+  - name: 線形篩
+    slug: linear-sieve
+    category: math-number-theory
+    status: todo
+
+  - name: メビウス関数・メビウスの反転公式
+    slug: mobius
+    category: math-number-theory
+    status: todo
+
+  - name: オイラーのφ関数
+    slug: euler-totient
+    category: math-number-theory
+    status: todo
+
+  - name: 高速べき乗 (繰り返し二乗法)
+    slug: fast-pow
+    category: math-number-theory
+    status: todo
+
+  - name: 離散対数 (Baby-step Giant-step)
+    slug: bsgs
+    category: math-number-theory
+    status: todo
+
+  - name: Miller-Rabin素数判定
+    slug: miller-rabin
+    category: math-number-theory
+    status: todo
+
+  - name: Pollard's rho法
+    slug: pollard-rho
+    category: math-number-theory
+    status: todo
+
+  - name: 原始根
+    slug: primitive-root
+    category: math-number-theory
+    status: todo
+
+  - name: フロアサム (Floor Sum)
+    slug: floor-sum
+    category: math-number-theory
+    status: todo
+
+  - name: Stern-Brocot Tree
+    slug: stern-brocot
+    category: math-number-theory
+    status: todo
+
+  # ── 数学（線形代数） ──
+  - name: 行列積
+    slug: matrix-multiplication
+    category: math-linear-algebra
+    status: todo
+
+  - name: 行列累乗
+    slug: matrix-exponentiation
+    category: math-linear-algebra
+    status: todo
+
+  - name: ガウスの消去法
+    slug: gaussian-elimination
+    category: math-linear-algebra
+    status: todo
+
+  - name: ガウスの消去法 (mod 2, ビット)
+    slug: gaussian-elimination-mod2
+    category: math-linear-algebra
+    status: todo
+
+  - name: 行列式 (Determinant)
+    slug: determinant
+    category: math-linear-algebra
+    status: todo
+
+  - name: 線形基底 (Linear Basis / XOR Basis)
+    slug: linear-basis
+    category: math-linear-algebra
+    status: todo
+
+  # ── 数学（多項式・変換） ──
+  - name: FFT (高速フーリエ変換)
+    slug: fft
+    category: math-polynomial
+    status: todo
+
+  - name: NTT (数論変換)
+    slug: ntt
+    category: math-polynomial
+    status: todo
+
+  - name: 任意modでの畳み込み
+    slug: arbitrary-mod-convolution
+    category: math-polynomial
+    status: todo
+
+  - name: Karatsuba法
+    slug: karatsuba
+    category: math-polynomial
+    status: todo
+
+  - name: 多項式の逆元・除算
+    slug: polynomial-inverse
+    category: math-polynomial
+    status: todo
+
+  - name: 多項式の対数・指数
+    slug: polynomial-log-exp
+    category: math-polynomial
+    status: todo
+
+  - name: FPS (形式的べき級数) 全般
+    slug: fps
+    category: math-polynomial
+    status: todo
+
+  - name: 高速ゼータ変換 / メビウス変換
+    slug: zeta-mobius-transform
+    category: math-polynomial
+    status: todo
+
+  - name: Hadamard変換 (XOR畳み込み)
+    slug: hadamard-transform
+    category: math-polynomial
+    status: todo
+
+  - name: Subset Convolution
+    slug: subset-convolution
+    category: math-polynomial
+    status: todo
+
+  # ── 数学（組合せ・確率） ──
+  - name: 二項係数 (mod p)
+    slug: binomial-coefficient
+    category: math-combinatorics
+    status: todo
+
+  - name: Lucasの定理
+    slug: lucas-theorem
+    category: math-combinatorics
+    status: todo
+
+  - name: カタラン数
+    slug: catalan-number
+    category: math-combinatorics
+    status: todo
+
+  - name: スターリング数
+    slug: stirling-number
+    category: math-combinatorics
+    status: todo
+
+  - name: ベル数
+    slug: bell-number
+    category: math-combinatorics
+    status: todo
+
+  - name: 包除原理
+    slug: inclusion-exclusion
+    category: math-combinatorics
+    status: todo
+
+  - name: バーンサイドの補題
+    slug: burnside
+    category: math-combinatorics
+    status: todo
+
+  - name: ポリアの数え上げ定理
+    slug: polya
+    category: math-combinatorics
+    status: todo
+
+  - name: 行列木定理 (Kirchhoff)
+    slug: matrix-tree-theorem
+    category: math-combinatorics
+    status: todo
+
+  - name: ラグランジュ補間
+    slug: lagrange-interpolation
+    category: math-combinatorics
+    status: todo
+
+  - name: Multipoint Evaluation
+    slug: multipoint-evaluation
+    category: math-combinatorics
+    status: todo
+
+  # ── 計算幾何 ──
+  - name: 凸包 (Graham Scan / Andrew's Monotone Chain)
+    slug: convex-hull
+    category: geometry
+    status: todo
+
+  - name: 線分交差判定
+    slug: segment-intersection
+    category: geometry
+    status: todo
+
+  - name: 点の内包判定
+    slug: point-in-polygon
+    category: geometry
+    status: todo
+
+  - name: 最近点対 (Closest Pair)
+    slug: closest-pair
+    category: geometry
+    status: todo
+
+  - name: ボロノイ図
+    slug: voronoi
+    category: geometry
+    status: todo
+
+  - name: ドロネー三角形分割
+    slug: delaunay
+    category: geometry
+    status: todo
+
+  - name: 半平面交差
+    slug: half-plane-intersection
+    category: geometry
+    status: todo
+
+  - name: 凸多角形の切断
+    slug: polygon-clipping
+    category: geometry
+    status: todo
+
+  - name: 回転キャリパー法
+    slug: rotating-calipers
+    category: geometry
+    status: todo
+
+  - name: ミンコフスキー和
+    slug: minkowski-sum
+    category: geometry
+    status: todo
+
+  # ── ゲーム理論 ──
+  - name: Grundy数 (Sprague-Grundy定理)
+    slug: sprague-grundy
+    category: game-theory
+    status: todo
+
+  - name: Nim
+    slug: nim
+    category: game-theory
+    status: todo
+
+  - name: Minimax / Alpha-Beta剪定
+    slug: minimax-alpha-beta
+    category: game-theory
+    status: todo
+
+  - name: 後退解析 (Retrograde Analysis)
+    slug: retrograde-analysis
+    category: game-theory
+    status: todo
+
+  # ── その他 ──
+  - name: 座標圧縮
+    slug: coordinate-compression
+    category: misc
+    status: todo
+
+  - name: ランレングス圧縮
+    slug: run-length-encoding
+    category: misc
+    status: todo
+
+  - name: しゃくとり法 (Two Pointers)
+    slug: two-pointers
+    category: misc
+    status: todo
+
+  - name: スライディングウィンドウ
+    slug: sliding-window
+    category: misc
+    status: todo
+
+  - name: Monotone Stack
+    slug: monotone-stack
+    category: misc
+    status: todo
+
+  - name: Monotone Queue (Sliding Window Minimum)
+    slug: monotone-queue
+    category: misc
+    status: todo
+
+  - name: Offline Query (クエリ先読み)
+    slug: offline-query
+    category: misc
+    status: todo
+
+  - name: Rollback可能Union-Find
+    slug: rollback-union-find
+    category: misc
+    status: todo
+
+  - name: オフライン削除 (Offline Dynamic Connectivity)
+    slug: offline-dynamic-connectivity
+    category: misc
+    status: todo
+
+  - name: マージテク (Small to Large)
+    slug: small-to-large
+    category: misc
+    status: todo
+
+  - name: Randomized Algorithm (乱択)
+    slug: randomized
+    category: misc
+    status: todo
+
+  - name: Parallel Binary Search
+    slug: parallel-binary-search
+    category: misc
+    status: todo
+
+  - name: Li Chao Tree
+    slug: li-chao-tree
+    category: misc
+    status: todo
+
+  - name: Cartesian Tree
+    slug: cartesian-tree
+    category: misc
+    status: todo
+
+  - name: Undo可能データ構造
+    slug: undoable-data-structure
+    category: misc
+    status: todo
+
+  - name: 永続データ構造全般
+    slug: persistent-data-structures
+    category: misc
+    status: todo
+
+  - name: Matroid (マトロイド)
+    slug: matroid
+    category: misc
+    status: todo
+
+  - name: Matroid Intersection
+    slug: matroid-intersection
+    category: misc
+    status: todo
+
+  - name: 最小全域有向木 (Edmonds' Algorithm)
+    slug: minimum-spanning-arborescence
+    category: misc
+    status: todo
+
+  - name: Dominator Tree
+    slug: dominator-tree
+    category: misc
+    status: todo
