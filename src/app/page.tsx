@@ -600,6 +600,83 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* データ構造（基本） */}
+        <h2 className="text-xl font-bold mt-8 mb-3">データ構造（基本）</h2>
+        <div className="space-y-2">
+          <Link
+            href="/stack"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Stack</h2>
+            <p className="text-sm text-muted-foreground">
+              LIFO構造でデータを管理する
+            </p>
+          </Link>
+          <Link
+            href="/queue"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Queue</h2>
+            <p className="text-sm text-muted-foreground">
+              FIFO構造でデータを管理する
+            </p>
+          </Link>
+          <Link
+            href="/deque"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Deque</h2>
+            <p className="text-sm text-muted-foreground">
+              両端からの挿入・削除が可能なキュー
+            </p>
+          </Link>
+          <Link
+            href="/binary-heap"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Priority Queue (Binary Heap)</h2>
+            <p className="text-sm text-muted-foreground">
+              二分ヒープによる優先度付きキュー
+            </p>
+          </Link>
+          <Link
+            href="/linked-list"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Linked List</h2>
+            <p className="text-sm text-muted-foreground">
+              ポインタで要素を連結するリスト構造
+            </p>
+          </Link>
+          <Link
+            href="/hash-table"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Hash Table</h2>
+            <p className="text-sm text-muted-foreground">
+              ハッシュ関数で高速な検索・挿入・削除を実現する
+            </p>
+          </Link>
+          <Link
+            href="/union-find"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">Union-Find</h2>
+            <p className="text-sm text-muted-foreground">
+              素集合の統合と所属判定を効率的に行う
+            </p>
+          </Link>
+          <Link
+            href="/weighted-union-find"
+            className="block p-4 border border-border rounded hover:bg-accent transition-colors"
+          >
+            <h2 className="font-semibold">重み付き Union-Find</h2>
+            <p className="text-sm text-muted-foreground">
+              要素間の相対的な重みを管理するUnion-Find
+            </p>
+          </Link>
+        </div>
+
         {/* データ構造（木クエリ） */}
         <h2 className="text-xl font-bold mt-8 mb-3">データ構造（木クエリ）</h2>
         <div className="space-y-2">
